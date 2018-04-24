@@ -1,1 +1,27 @@
-hello
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QuizGame</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrap" id="container">
+		<h1>Quiz Game</h1>
+		<form>	
+			<div id="questionShow"></div>
+				<label class="option"><input type="radio" name="option" value="1"><span id="opt1"></span></label>
+				<label class="option"><input type="radio" name="option" value="2"><span id="opt2"></span></label>
+				<label class="option"><input type="radio" name="option" value="3"><span id="opt3"></span></label>
+				<label class="option"><input type="radio" name="option" value="4"><span id="opt4"></span></label>
+				<button type="button" id="btnClick" onclick="toNextQuestion()" > click again to continue </button>
+				<div id="result" ></div>
+
+		</form>
+	</div>
+	
+	<script src="js/logic.js"></script>
+
+</body>
+</html>
