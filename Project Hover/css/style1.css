@@ -1,0 +1,151 @@
+*
+{
+	box-sizing: border-box;
+}
+.container
+{
+	width: 1200px;
+	height: 100%;
+}
+figcaption {
+	padding: 5px;
+	float: left;
+
+}
+.effect-picture figcaption span
+{
+	color: green;
+}
+figcaption h2
+{
+	
+	font-size: 15px;
+	padding-left: 0px;
+}
+
+span.throughline
+{
+	margin-left: 5px;
+	text-decoration: line-through; 
+color: red;	
+}
+
+.right-menu
+{
+	margin: 0 auto;
+	padding: 4em 1em;
+	float: left;
+	word-spacing: 3px;
+	width: 300px;
+	
+}
+.left-menu
+{
+	margin: 0 auto;
+	padding: 4em 1em;
+	float: right;
+	word-spacing: 3px;
+}
+div.right-menu a:nth-child(2)::before
+{
+	
+	border-left: 2px solid red;
+	content: '';
+	padding-left: 20px;
+	
+	}
+div.right-menu::before
+{
+	border-left: 2px solid blue;
+	content: '';
+	padding-left: 10px;
+}
+.content
+{
+	width: 1200px;
+	height: 100%;
+	position: absolute;
+	top: 200px;	
+}
+
+.content figure
+{
+	position: relative;
+	float: left;
+	overflow: hidden;
+	max-width: 250px;
+	max-height: 500px;
+	text-align: center;
+	margin-left: 20px;
+	margin-bottom: 100px;
+}
+.content figure img
+{
+	position: relative;
+	display: block;
+	height: 400px;
+	max-width: 100%;
+	opacity: 0.8;
+
+} 
+p.icon-links
+{
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	
+	color: skyblue;
+	height:  120px;
+	width: 120px;
+	padding: 2px;
+	left: 0;
+	opacity: 0;
+	
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	
+}
+p.icon-links a:first-child
+{
+	width: 30px;
+	height: 30px;
+	background: white;
+	position: absolute;
+	left: 0;
+}
+p.icon-links a:nth-child(2)
+{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	background: white;
+	bottom: 50px;
+}
+p.icon-links a:nth-child(3)
+{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	background: white;
+	bottom: 10px;
+}
+p.icon-links a:nth-child(4)
+{
+width: 100%;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	background: hotpink;
+	bottom: -30px;
+}
+figure.effect-picture:hover p.icon-links
+{
+	opacity: 1;
+	-webkit-transform:translate3d(0,-150px,0);
+	transform: translate3d(0,-150px,0);
+}
+
+
+
