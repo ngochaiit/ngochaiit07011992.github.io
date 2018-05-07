@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class=" calculator">
+            <input type="text" name="screen" id="input-id" >
+            
+                <div id="button-number">
+                    <input type="button" id="keys" value="<--" onclick="backspace()">
+                    <input type="button" id="keys" value="CE" >
+                    <input type="button" id="keys" value="C" onclick="addtoscreen('c')">
+                    <input type="button" id="keys" value="9" onclick="addtoscreen('9')">
+                    <input type="button" id="keys" value="8" onclick="addtoscreen('8')">
+                    <input type="button" id="keys" value="7" onclick="addtoscreen('7')">
+                    <input type="button" id="keys" value="6" onclick="addtoscreen('6')">
+                    <input type="button" id="keys" value="5" onclick="addtoscreen('5')">
+                    <input type="button" id="keys" value="4" onclick="addtoscreen('4')">
+                    <input type="button" id="keys" value="3" onclick="addtoscreen('3')">
+                    <input type="button" id="keys" value="2" onclick="addtoscreen('2')">
+                    <input type="button" id="keys" value="1" onclick="addtoscreen('1')">
+                    <input type="button" id="key0" value="0" onclick="addtoscreen('0')" width="225px" height="100px">
+                    <input type="button" id="keys" value="." onclick="addtoscreen('.')">
+                </div>
+                <div id="button-function">
+                        <input type="button" id="keys" value="x^3" onclick="power(3)">
+                        <input type="button" id="keys" value="∛" onclick="cbrt()">
+                        <input type="button" id="keys" value="/" onclick="addtoscreen('/')">
+                        <input type="button" id="keys" value="%" onclick="addtoscreen('%')">
+                        <input type="button" id="keys" value="*" onclick="addtoscreen('*')">
+                        <input type="button" id="keys" value="1/x" onclick="reciproc()">
+                        <input type="button" id="keys" value="-" onclick="addtoscreen('-')">
+                        <input type="button" id="keys" value="+" onclick="addtoscreen('+')">
+                        <input type="button" id="specialkey" value="=" onclick="answer()">
+</div>
+                
+            </div>
+        </div>
+        <script src="js/logic.js"></script>
+    </body>
+</html>
