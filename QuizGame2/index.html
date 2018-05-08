@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Quiz Game</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+            <audio  autoplay>
+                    <source src= "audio/audio3.mp3" >
+                </audio>
+        <div class="container" id="interface">
+            <form>
+                <div id="inputQuestion"></div>
+                <div class="answer">
+                    <label class="option"><input type="radio" name="option" value="1"><span id="opt1"></span></label>
+                    <label class="option"><input type="radio" name="option" value="2"><span id="opt2"></span></label>
+                    <label class="option"><input type="radio" name="option" value="3"><span id="opt3"></span></label>
+                    <label class="option"><input type="radio" name="option" value="4"><span id="opt4"></span></label>
+
+                    <button type="button" id="btnClick" onclick="nextQuestion()">Continue</button>
+                </div>
+            </form>
+        </div>
+        
+        <script src="js/logic.js"></script>
+    </body>
+
+</html>
