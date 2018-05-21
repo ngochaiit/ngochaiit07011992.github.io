@@ -1,0 +1,129 @@
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    display: inline;
+    font-family: 'Roboto Condensed', sans-serif;  
+    background-image: url("../image/ShadowFiend.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+  }
+  
+*{
+    box-sizing: border-box;
+}
+header
+{
+    width: 100%;
+    height: 100px;
+   
+
+}
+#progressBar {
+    width: 1000px;
+    margin: 10px 0 0 130px;
+    height: 22px;
+    background-color: #0A5F44;
+    position: absolute;
+    left: 4%;;
+  }
+
+  #progressBar div {
+    height: 100%;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color: #CBEA00;
+    box-sizing: border-box;
+  }
+  
+h1{
+    font-size: 50px;
+    color: yellow;
+    text-align: center;
+    vertical-align: center;
+    position: absolute;
+    left: 33%;
+
+}
+.content
+{
+    position: relative;
+    height: 220%;
+    width: 100%;
+    margin: 0px;
+}
+.grid
+{
+    position: relative;
+    padding: 10px;
+    width: 1200px;
+    height: 85%;
+    margin-left: 150px;
+    float: left;
+    margin-top: 100px;
+    padding: 20px;
+    
+}
+img{
+    width: 150px;
+    height: 250px;
+}
+.card 
+{
+    width: 150px;
+    height: 250px;
+    position: relative;
+    float: left;
+    margin: 30px;
+}
+.card .cardback
+{
+transform: rotateY(0deg);
+position: absolute;
+top: 0px;
+left: 0px;
+
+
+}
+/* .card:hover .cardback{
+    transform: rotateY(180deg);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+    
+   
+} */
+
+.card .effect-picture{
+    transform: rotateY(0);
+    
+   }
+ 
+   .cardback.open {
+    transform: rotateY(180deg);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+.cardback.open1
+{
+    visibility: hidden;
+}
+.cardback.open2
+{
+    transform: rotateY(0deg);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+   
+}
+.effect-picture.rotate
+{
+    transform: rotateY(0deg);
+    -webkit-transition: all 1s;
+}
