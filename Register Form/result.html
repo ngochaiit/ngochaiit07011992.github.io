@@ -22,14 +22,18 @@
        let day = parseInt(params.get("day"));
        let month = params.get("month");
        let year = parseInt(params.get("year"));
+       let telephoneNumber = params.get("telephoneNumber");
+       let gender = params.get('gender');
+
        console.log(year);
        document.write("<h1>Thank You!!</h1>");
     document.write("<h3>Here is your data</h3>");
     document.write("User name:" +userName+ "<br/>");
     document.write("Email is: " +email+ "<br/>");
-    document.write("password is" +password+ "<br/>");
+    document.write("password is: " +password+ "<br/>");
     document.write("Your birthday is: " +day+ "/" +month+ "/" +year+ "<br/>" );
-    document.write("you are:" +genderChoice);
+    document.write("you are:" +gender+ "<br/>");
+    document.write(" your telephone Number is: " +telephoneNumber);
        
        
 }
