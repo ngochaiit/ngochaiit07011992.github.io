@@ -2,6 +2,11 @@
 {
     box-sizing: border-box;
 }
+span{
+    font-size: 10px;
+    color: red;
+    font-style: inherit;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -12,9 +17,9 @@ body{
 }
 /*full-width input fields*/
 
-input[type=text], input[type = password]
+input[type=text], input[type = password], input[type = email]
 {
-    width: 100%;
+    width: 80%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;

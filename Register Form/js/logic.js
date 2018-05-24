@@ -65,27 +65,88 @@ $("#registerbtn").click(function(){
     });
 });
 
-//  $(document).on("submit", "form", function(event)
-//  {
-//     event.preventDefault();
+$('#form-register').on('submit',function()
+{
+    var isValid = true;
+    if($('#userName').val().trim() == ''||$('#userName').val().match(/^([a-zA-Z])[a-zA-Z_-]*[\w_-]*[\S]$|^([a-zA-Z])[0-9_-]*[\S]$|^[a-zA-Z]*[\S]$/) == null)
+    {
+          $('#userName').next('span').text('Name is empty or invaild. eg: David0701...');
+        
+      
+            isValid = false;
+        
+    }
+    else
+    {
+        $('#userName').next('span').text('');
+    }
 
-//     var url=$(this).attr("action");
-//     $.ajax({
-//         url: url,
-//          type: 'GET',
-//        dataType: "JSON",
-//         data: new FormData(this),
-//        processData: false,
-//        contentType: false,
-//        success: function (data, status)
-//        {
-//            $('#demo').html(data); //content loads here
+    if($('#email').val().trim() == '' || $('#email').val().match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/) == null)
+    {
+          $('#email').next('span').text('Email is empty or invalid. eg:houson@gmail.com');
+      
+            isValid = false;
+        
+    }
+    else
+    {
+        $('#email').next('span').text('');
+    }
 
-//        },
-//        error: function (xhr, desc, err)
-//        {
-//            console.log("error");
+    if($('#psw').val().trim() == '')
+    {
+          $('#psw').next('span').text(' password is empty');
+      
+            isValid = false;
+        
+    }
+    else
+    {
+        $('#psw').next('span').text('');
+    }
+    
 
-//        }
-//    });        
-//  });
+    if($('#pwm-repeat').val().trim() == '')
+    {
+          $('#pwm-repeat').next('span').text('Please repeat your Password' );
+      
+            isValid = false;
+        
+    }
+    else
+    {
+        $('#pwm-repeat').next('span').text('');
+    }
+
+    if($('#telephoneNumber').val().trim() == ''|| $('#telephoneNumber').val().match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/) == null)
+    {
+          $('#telephoneNumber').next('span').text('telephone number is empty or invaild. eg: (123) 456-7890');
+      
+            isValid = false;
+        
+    }   
+    else
+    {
+        $('#telephoneNumber').next('span').text('');
+    }
+
+    if($('#psw').val().trim() !== $('#pwm-repeat').val().trim())
+    {
+        $('#pwm-repeat').next('span').text(' Your repeat password is wrong');
+        isValid = false;
+    }
+    else
+    {
+        $('#pwm-repeat').next('span').text('');
+    }
+
+    
+    
+    
+
+    
+
+    return isValid;
+    
+    
+})
