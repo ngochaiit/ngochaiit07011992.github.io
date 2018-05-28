@@ -28,3 +28,14 @@ p{
     width: 50px;
     float: right;
 }
+tr:hover {
+    background-color: lightblue;
+    pointer-events: unset;
+    cursor: pointer ;
+}
+
+.main-menu:first-child:hover
+{
+    background-color: white;
+
+}
