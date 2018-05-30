@@ -108,15 +108,40 @@ var footballPlayers = [
     })
     }
 
-    
-    function getTallersPlayer()
+
+    function sortPlayersByName(a,b)
     {
-      $.each(footballPlayers, function(i, footballPlayer)
+     const nameA = a.name.toUpperCase();
+     const nameB = b.name.toUpperCase();
+     let comparison = 0;
+     if(nameA > nameB)
+     {
+       comparison = 1;
+     }
+     else if (nameA < nameB)
+     {
+       comparison = -1;
+     }
+     return comparison;
+     
+    }
+    footballPlayers.sort(sortPlayersByName);
+
+    function getRandomPlayer()
     {
-      var valTall = footballPlayer.height;
-      console.log(valTall);
-      
-    })
+      var random_index = Math.floor(Math.random()*footballPlayers.length);
+      var object = footballPlayers[random_index];
+      console.log(object);
     }
 
-    
+    function  getPositionOfPlayer(index)
+    {
+      if(index < footballPlayers.length)
+      {
+        console.log(footballPlayers[index]);
+      }
+      else
+      {
+        console.log('Khong tim thay cau thu');
+      }
+    }
