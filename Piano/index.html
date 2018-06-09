@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Piano</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="keys">
+                <div class="key white" data-key="81">Q</div>
+                <div class="key black" data-key="49">1</div>
+                <div class="key white" data-key="87">W</div>
+                <div class="key black" data-key="50">2</div>
+                <div class="key white" data-key="68">D</div>
+                <div class="key white" data-key="70">F</div>
+                <div class="key black" data-key="51">3</div>
+                <div class="key white" data-key="72">H</div>
+                <div class="key black" data-key="52">4</div>
+                <div class="key white" data-key="75">K</div>
+                <div class="key black" data-key="53">5</div>
+                <div class="key white" data-key="69">E</div>
+                <div class="key white" data-key="82">R</div>
+                <div class="key black" data-key="54">6</div>
+                <div class="key white" data-key="89">Y</div>
+                <div class="key black" data-key="55">7</div>
+                <div class="key white" data-key="65">A</div>
+                <div class="key white" data-key="87">W</div>
+                <div class="key black" data-key="56">8</div>
+                <div class="key white" data-key="68">D</div>
+                <div class="key black" data-key="57">9</div>
+                <div class="key white" data-key="71">G</div>
+                <div class="key black" data-key="90">Z</div>
+                <div class="key white" data-key="74">J</div>
+                <div class="key white" data-key="75">K</div>
+                <div class="key black" data-key="88">X</div>
+                <div class="key white" data-key="69">E</div>
+                <div class="key black" data-key="67">C</div>
+                <div class="key white" data-key="84">T</div>
+                <div class="key white" data-key="89">Y</div>
+                <div class="key black" data-key="86">V</div>
+                <div class="key white" data-key="65">A</div>
+                <div class="key black" data-key="66">B</div>
+                <div class="key white" data-key="83">S</div>
+                <div class="key black" data-key="78">N</div>
+                <div class="key white" data-key="70">F</div>
+                <div class="key white" data-key="71">G</div>
+
+            
+        </div>
+
+        <audio data-key="81" src="sound/DO.MP3"></audio>
+        <audio data-key="65" src="sound/DO2stretched.MP3"></audio>
+        <audio data-key="87" src="sound/DOstretched.MP3"></audio>
+        <audio data-key="83" src="sound/FA.MP3"></audio>
+        <audio data-key="68" src="sound/FAstretched.MP3"></audio>
+        <audio data-key="70" src="sound/LA.MP3"></audio>
+        <audio data-key="71" src="sound/Mi.MP3"></audio>
+        <audio data-key="72" src="sound/MIstretched.MP3"></audio>
+        <audio data-key="74" src="sound/RE.MP3"></audio>
+        <audio data-key="75" src="sound/si.wav"></audio>
+        <audio data-key="76" src="sound/Sistretched.MP3"></audio>
+        <audio data-key="69" src="sound/SOL.wav"></audio>
+        <audio data-key="82" src="sound/SOLstretched.MP3"></audio>
+        <audio data-key="84" src="sound/stretched.MP3"></audio>
+        <audio data-key="89" src="sound/REstretched.MP3"></audio>
+
+
+        <audio data-key="49" src="sound/DO.MP3"></audio>
+        <audio data-key="50" src="sound/DO2stretched.MP3"></audio>
+        <audio data-key="51" src="sound/DOstretched.MP3"></audio>
+        <audio data-key="52" src="sound/FA.MP3"></audio>
+        <audio data-key="53" src="sound/FAstretched.MP3"></audio>
+        <audio data-key="54" src="sound/LA.MP3"></audio>
+        <audio data-key="55" src="sound/Mi.MP3"></audio>
+        <audio data-key="56" src="sound/MIstretched.MP3"></audio>
+        <audio data-key="70" src="sound/RE.MP3"></audio>
+        <audio data-key="90" src="sound/si.wav"></audio>
+        <audio data-key="88" src="sound/Sistretched.MP3"></audio>
+        <audio data-key="67" src="sound/SOL.wav"></audio>
+        <audio data-key="86" src="sound/SOLstretched.MP3"></audio>
+        <audio data-key="66" src="sound/stretched.MP3"></audio>
+        <audio data-key="78" src="sound/REstretched.MP3"></audio>
+        
+        <script>
+       function playSounds(e)
+       {
+           const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
+           const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
+           console.log(key);
+           if(key == document.querySelector(`.white[data-key = "${e.keyCode}"]`)){
+
+               audio.play();
+               key.classList.add('playing');
+           }
+           else{
+               audio.play();
+               key.classList.add('playing1');
+           }
+          
+           }
+
+    function removeEffect(e)
+    {
+     const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
+     if(key == document.querySelector(`.white[data-key = "${e.keyCode}"]`))
+     {
+         key.classList.remove('playing');
+     }
+     else{
+         key.classList.remove('playing1');
+     }
+    }
+       
+      
+    window.addEventListener('keydown', playSounds);
+    window.addEventListener('keyup', removeEffect);
+
+       
+
+        </script>
+    </body>
+</html>
