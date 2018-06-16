@@ -1,0 +1,465 @@
+*
+{
+    box-sizing: border-box;
+
+}
+body{
+    max-width: 100%;
+    
+    display: flex;
+
+}
+.page
+{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.page1
+{
+    max-width: 80%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Roboto', sans-serif;
+   float: right;
+    
+}
+header.head{
+    width: 100%;
+    height: 80%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("../image/macbook.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.content-box
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+   
+}
+div.text1
+{
+    font-size: 5.5vw;
+    color: white;
+}
+div.text2
+{
+    padding-top: 20px;
+    width: 85%;
+    font-size: 2.5vw;
+    color: gray;
+    text-align: center;
+    
+    
+    
+}
+.button
+{
+padding-top: 80px;
+text-align: center;
+
+}
+.button button{
+    width: 20%;
+    height: 80px;
+    font-size: 2vw;
+    border-radius: 10px;
+    background-color: coral;
+
+}
+nav{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 20%;
+}
+
+
+i.fas.fa-bars
+{
+   font-size: 40px;
+   text-align: center;
+   color: white;
+  }
+.total-content
+{
+    width: 100%;
+}
+.content
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+article.title
+{   
+    padding-top: 50px;
+    text-transform: unset; 
+    font-size: 5vw; 
+    padding-bottom: 10px;
+}
+div.line
+{
+    content: "";
+    border-bottom: 1px solid red;
+    width: 10%;
+    padding-top: 10px;
+   }
+
+article.option
+{
+    display:flex;
+    padding-top: 70px;
+    
+}
+
+article.option > div{
+    width: 25%;
+    text-align: center;
+    font-size: 2.5vw;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+div.option.four
+{
+    text-align: right;
+}
+div.option.one
+{
+    text-align: left;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns:45% 45%;
+    grid-template-rows:  500px 500px 500px;
+   grid-column-gap: 10%;
+   grid-row-gap: 50px;
+   padding-top: 100px;
+}
+div.item
+{
+display: flex;
+ flex-direction: column;
+ height: 100%;
+ width: 100%;
+}
+div.image
+{
+    width: 100%;
+    height: 70%;
+}
+div.image img{
+    width: 100%;
+    height: 100%;
+}
+div.textbox
+{
+    width: 100%;
+    height: 30%;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+div.text.title
+{
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 5px;
+}
+div.text.field
+{   
+    font-size: 1.5vw;
+    color: white;
+    padding-bottom: 30px;
+}
+
+div.text.link
+{
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: white;
+}
+div.textbox.one{
+    background-color: aqua;
+}
+div.textbox.two
+{
+    background-color: darkgray;
+}
+div.textbox.three
+{
+    background-color: blue;
+}
+div.textbox.four
+{
+    background-color: plum;
+}
+div.textbox.five
+{
+    background: blue;
+}
+div.textbox.six
+{
+    background: brown;
+}
+
+.info
+{
+    display: flex;
+}
+div.info-left
+{
+    width: 50%;
+}
+div.info-right
+{
+    width: 50%;
+}
+div.box-info
+{
+    width: 100%;
+    height: 80%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+
+div.box-info .message
+{
+    color: gray;
+    font-size: 3vw;
+    padding-bottom: 50px;
+}
+div.box-info .name
+{
+    width: 80%;
+    height: 50px;
+    text-decoration: initial;
+}
+div.box-info .email
+{
+    width: 80%;
+    height: 50px;
+    
+}
+div.box-info .texting
+{
+    width: 80%;
+    height: 150px;
+   text-align-last: inherit;
+   
+}
+div.box-info .btn1
+{
+    width: 20%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: darkgoldenrod;
+    font-size: 1vw;
+    color: white;
+   float: right;
+  
+}
+div.padding
+{
+    padding-right: 20%;
+}
+
+
+div.vertical-line
+{
+    width: 0%;
+    content: '';
+    height: 60%;
+    border-left: 1px solid green;
+   margin-top: 150px;
+}
+div.box-symbol
+{
+    width: 100%;
+    height: 80%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.total{
+    display: flex;
+    padding-left: 10%;
+}
+i.fas.fa-home, i.fas.fa-phone , i.fas.fa-paper-plane
+{
+    font-size: 5vw;
+}
+div.house-content
+{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+div.first-info
+{
+    font-size: 2vw;
+    color: black;
+}
+div.second-info
+{
+    font-size: 1vw;
+    color: gray;
+    padding-top: 30px;
+}
+footer{
+    width: 100%;
+}
+.total-foot
+{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.total-foot .icon-contact
+{
+    text-align: center;
+    word-spacing: 50px;
+    font-size: 3vw;
+}
+
+i.fab.fa-twitter ,i.fab.fa-skype::after{
+    content: '';
+    height: 50px;
+    border-right: 1px solid black;
+    padding-right: 50px;
+}
+
+.final-word
+{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 2vw;
+    color: gray;
+    padding-bottom: 100px;
+
+}
+i.fab:hover
+{
+    color: aqua;
+    cursor: pointer;
+
+}
+article.option > div:hover
+{
+    border-bottom: 1px solid red;
+    cursor: pointer;
+}
+.side-bar
+{
+    width: 20%; 
+    display: flex;
+    flex-direction: column;
+    background-color:#696969;
+    display: none;
+
+}
+
+
+.side-bar .avatar
+{
+    width: 100%;
+    height: 50%;
+    position: relative;
+   
+}
+
+
+.side-bar .avatar img
+{
+    width: 100%;
+    height: 100%;
+    
+}
+.image-info
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 15%;
+}
+.image-info .image-name span{
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+    padding-left: 50px;
+}
+.image-info .image-job
+{
+    padding-top: 10px;
+}
+.image-info .image-job span
+{
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+    padding-left: 50px;
+    
+}
+div.side
+{
+    width: 100%;
+    height: 12%;
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+
+}
+div.side a{
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    padding: 100px 0px 50px 50px;
+    text-transform: capitalize;
+}
+i.fas.fa-bars:hover{
+    cursor: pointer;
+    color: black;
+}
+@media screen and (max-width: 800px) {
+    
+   .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  300px 300px 300px 300px 300px 500px;
+   grid-column-gap: 10%;
+   grid-row-gap: 50px;
+   padding-top: 100px;
+   }
+  }
+
+@media screen and (max-width: 800px)
+{
+    .info{
+        flex-wrap: wrap;
+    }
+    div.vertical-line
+    {
+        display: none;
+    }
+    div.info-left, div.info-right
+    {
+        width: 100%;
+    }
+}
