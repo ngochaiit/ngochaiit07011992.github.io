@@ -1,0 +1,536 @@
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: 'Roboto', sans-serif;
+  
+}
+*
+{
+    box-sizing: border-box;
+}
+.page{
+    max-width: 100%;
+    background-color: #f1f1f1;
+}
+header
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;    
+}
+.header_top
+{
+    width: 100%;
+    background-color: #FF6600;
+}
+.header_top .content{
+    padding: 4px 55px;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;   
+}
+.hotline
+{
+    width: 14%;
+    height: 100%;
+    
+    font-weight: bold;	
+    line-height: 15px;
+    background: #4A4A4A;
+   
+    display: flex;
+    align-items: center;
+}
+.header_top .content p
+{
+    padding-left: 10px;
+    color: white;
+    font-size: 12px;
+}
+.hotline i
+{
+    padding-right: 8px;
+}
+nav{
+    padding: 0 55px;
+    background-color: white;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+nav ul li{
+
+float: left;
+padding-right: 10px;
+line-height: 28px;
+font-size: 16px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #66757f;
+ 
+}
+a i
+{
+    padding-right: 10px;
+}
+.option a:hover{
+    cursor: pointer;
+  color: #FF6600;
+}
+.btn__login
+{
+    width: 15%;
+    height: 60%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+
+}
+.btn__login button{
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+}
+.btn__login .btn1
+{
+    background: white;
+    color: black;
+}
+.btn__login .btn2
+{
+    background-color: #2A82B6;
+    color: white;
+}
+div.header_middle.hide
+{
+    width: 100%;
+    height: 60%;
+}
+.ws_images
+{
+    max-width: 100%;
+    max-height: 100%;
+   overflow: hidden;
+   position: relative;
+  
+}
+.ws_images .bg-image{
+    width: 100%;
+    height: auto;
+    
+}
+.ws_images .group-image-content
+{
+    width: 100%;
+    padding: 0 55px;
+    position: absolute;
+     top: 2%;
+     height: 100%;
+}
+
+.group-intro-text h1
+{
+    padding-top: 30px;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+   
+}
+.group-intro-text > h3, button
+{
+    margin: 0px;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    font-weight: 200;
+}
+.group-intro-text h3 > i
+{
+    color: #FF6600;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.group-intro-text button{
+    
+    width: 200px;
+    height: 45px;
+    background-color: #FF6600;
+    border: 1px solid black;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    
+   
+}
+.group-intro-text button a{
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    border-radius:10px ;
+    
+}
+.phone-group-image
+{
+    position: relative;
+}
+.phone-group-image img{
+    position: absolute;
+}
+.ws_bullets
+{
+    position: absolute;
+    top: 90%;
+    left: 44%;
+}
+.ws_bullets img {
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: whitesmoke;
+   
+}
+
+.header_bottom
+{
+    width: 100%;
+    padding: 0 55px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+.header_bottom .box
+{
+    display: flex;
+
+}
+
+.header_bottom  div> i{ 
+    background-color: #FF6600;
+     width: 38px; height: 38px; text-align: center;
+      font-size: 20px; padding: 9px; color: #fff; margin-top: 21.433px; border: radius 10px; ; -webkit-border-radius:10px ; -moz-border-radius:10px ; -ms-border-radius:10px ; -o-border-radius:10px ;
+}
+
+.box-content h1{
+    font-size: 18px;
+    font-weight: bold;
+    color: #475168;
+    padding: 10px;
+
+}
+.box-content p
+{
+    font-size: 13px;
+    color: #666 !important;
+    margin-top: 8px;
+    line-height: 24px;
+
+}
+section{
+    display: flex;
+    padding: 10px 55px;
+    flex-direction: row-reverse;
+    width: 100%;
+
+}
+article.main-page
+{
+    background: white;
+    width: 75%;
+    margin-right: 10px;
+}
+.film-content .list__title h1
+{
+    color: #FF6600;
+    text-decoration: none;
+}
+.film-content .list__title a{
+    color: #FF6600;
+}
+
+
+.comment
+{   margin: 20px 20px;
+    border: 1px solid #FF6600;
+    display: flex;
+    align-items: center;
+    
+}
+.comment-number
+
+{
+   flex-grow: 1;
+    display: flex;
+
+}
+
+.avatar img
+{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 100%;
+    padding: 5px 10px;    
+}
+.text p:first-child{
+    font-size: 13px;
+    color: #797979;
+    font-weight: 500;
+}
+.text p:last-child
+{
+     display: block;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #777;
+    font-weight: 500;
+}
+
+
+aside
+{
+    width: 25%;
+   
+}
+div.side.search
+{
+    width: 100%;
+    height: 80px;
+ background: white; 
+    display: flex;
+     align-items: center;
+     padding-left: 10px;
+ 
+}
+.input-search
+{
+   
+    height: 40%;
+    width: 90%;
+      
+}
+.input-search input
+{
+    height: 100%;
+    width: 70%;
+    float: left;
+}
+.input-search button
+{
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-image: linear-gradient(to bottom,#52b6ee 0,#409cd3 100%);
+    border-top-right-radius: 10%;
+   border-bottom-right-radius: 10%;
+   font-size: 12px;
+
+}
+.sign-youtube
+{
+  width: 100%;
+  height: 120px;
+  background-color: white;
+}
+
+.sign-youtube h3{
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 0;
+
+}
+.sign-youtube span
+{
+    font-weight: bold;
+    
+}
+.sign-youtube i{
+    padding-right: 5px;
+}
+.youtube-follow
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.youtube-follow .youtube
+{
+    height: 41px;	width: 132px;	border: 1px solid #979797;	background-color: #D0021B;
+    text-align: center;
+}
+
+.youtube-follow h3{
+    margin: 0;
+    color: #FFFFFF;	font-family: "Lucida Grande";	font-size: 18px;	line-height: 21px;
+
+}
+.youtube-follow .sub{
+height: 41px;	width: 61px;	border: 1px solid #979797;	background-color: #FFFFFF;
+text-align: center;
+padding-top: 10px;
+}
+
+.side-box
+{
+    width: 100%;
+}
+.sidetitle
+{
+    height:50px;
+     width: 100%;
+    border: 1px solid #979797;
+    background-color: #FF6600;
+}
+.sidetitle p
+{
+    text-align: center;
+    color: #FFFFFF;	font-family: "Lucida Grande";	font-size: 14px;	font-weight: bold;	line-height: 17px;
+text-transform: uppercase;
+}
+
+.respond-chat
+{
+    padding : 15px 10px;
+}
+.respond-chat textarea{
+    width: 100%;
+    height: 200px;
+    
+}
+.respond-chat button{
+    margin-top: 10px;
+  	height: 39px;	width: 95px;	border: 1px solid #979797;	border-radius: 8px;	background-color: #FF6600;
+}
+.list-question
+{
+    width: 100%;
+}
+.list-question{
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+
+}
+.question span:first-child{
+    font-size: 12px;
+    color: #FF6600;
+    font-weight: bold;
+}
+.question span:nth-child(2)
+{
+    font-size: 12px;
+}
+.question button{
+    height: 23px;	width: 56px;	border: 1px solid #979797;	border-radius: 4px;	background-color: #FF6600;
+    font-size: 12px;
+    text-align: center;
+}
+.option-time
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+.option-time a{
+    text-align: center;
+    padding-top: 5px;
+    flex-grow: 1;
+    background-color: #EEEEEE;
+
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    padding-top: 77px;
+    background: white;
+}
+
+.footer-box1, .footer-box2
+{
+    width: 33%;
+    padding: 10px 15px;
+}
+
+.footer-box1
+{
+    display: flex;
+    
+
+}
+.footer-box1 img{
+    padding-top: 21px;
+    padding-right: 10px;
+}
+.text-box1
+{
+    padding-top: 20px;
+}
+.footer-box1 p{
+    color: #555;
+    line-height: 24px;
+    font-size: 13px;
+    margin: 0 0 10px;
+
+}
+.footer-box2 h1{
+    height: 40.85px;	width: 66px;	color: #333333;	font-family: "Helvetica Neue";	font-size: 20px;	line-height: 24px;
+
+}
+.footer-box2 a{
+    display: flex;
+    border-bottom: 1px dotted black;
+    
+}
+.footer-box2 i{
+    padding-top: 15px;
+
+}
+.footer-box2 p{
+    text-decoration: none;
+    display: block;
+    color: #555;
+    font-size: 14px;
+}
+.footer-box1 .text-box1 p:nth-child(2)
+{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+

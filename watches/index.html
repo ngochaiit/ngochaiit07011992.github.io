@@ -1,0 +1,504 @@
+<html>
+    <head>
+        <title>Watches</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <div class="time"></div><br>
+        <div class="clock">
+            <div class="num num1"><span>1</span></div>
+            <div class="num num2"><span>2</span></div>
+            <div class="num num3"><span>3</span></div>
+            <div class="num num4"><span>4</span></div>
+            <div class="num num5"><span>5</span></div>
+            <div class="num num6"><span>6</span></div>
+            <div class="num num7"><span>7</span></div>
+            <div class="num num8"><span>8</span></div>
+            <div class="num num9"><span>9</span></div>
+            <div class="num num10"><span>10</span></div>
+            <div class="num num11"><span>11</span></div>
+            <div class="num num12"><span>12</span></div>
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+            <div class="overlay">
+            <div class="clock-italy">
+                <div class="clock-italy-child">
+                    <div class="num num1"><span>1</span></div>
+                    <div class="num num2"><span>2</span></div>
+                    <div class="num num3"><span>3</span></div>
+                    <div class="num num4"><span>4</span></div>
+                    <div class="num num5"><span>5</span></div>
+                    <div class="num num6"><span>6</span></div>
+                    <div class="num num7"><span>7</span></div>
+                    <div class="num num8"><span>8</span></div>
+                    <div class="num num9"><span>9</span></div>
+                    <div class="num num10"><span>10</span></div>
+                    <div class="num num11"><span>11</span></div>
+                    <div class="num num12"><span>12</span></div>
+                    <div class="hand hour-hand1"></div>
+                    <div class="hand min-hand1"></div>
+                    <div class="hand second-hand1"></div>
+                 </div>
+                </div>
+        
+                </div>
+
+                <div class="overlay1">
+                        <div class="clock-America">
+                            <div class="clock-America-child">
+                                <div class="num num1"><span>1</span></div>
+                                <div class="num num2"><span>2</span></div>
+                                <div class="num num3"><span>3</span></div>
+                                <div class="num num4"><span>4</span></div>
+                                <div class="num num5"><span>5</span></div>
+                                <div class="num num6"><span>6</span></div>
+                                <div class="num num7"><span>7</span></div>
+                                <div class="num num8"><span>8</span></div>
+                                <div class="num num9"><span>9</span></div>
+                                <div class="num num10"><span>10</span></div>
+                                <div class="num num11"><span>11</span></div>
+                                <div class="num num12"><span>12</span></div>
+                                <div class="hand hour-hand2"></div>
+                                <div class="hand min-hand2"></div>
+                                <div class="hand second-hand2"></div>
+                             </div>
+                            </div>
+                    
+                            </div>
+
+        </div>
+        <style>
+            *{
+                box-sizing: border-box;
+               
+            }
+           body{
+               max-width: 100%;
+           }
+           
+            :root{
+                --size: 500px;
+            }
+            .time{
+                text-align: center;
+                padding: 10px;
+                font-size: 30px;
+                font-weight: bold;
+                color:gray;
+            }
+            .overlay
+            {
+                max-width: 35%;
+                max-height: 35%;
+                position: absolute;
+                top: 55%;
+                left: 22%;
+                 height: 30%;
+                
+            }
+            .overlay1
+            {
+                max-width: 35%;
+                max-height: 35%;
+                position: absolute;
+                top: 12%;
+                right: 35%;
+                 height: 30%;
+                
+            }
+            .clock-America
+            {
+                width: 200px;
+                height: 200px;
+                border: 3px solid blue;
+                box-shadow: 0 0 10px 0 black;
+                border-radius: 50%;
+                position: relative;
+                background-color: rgb(245, 245, 245);
+                
+            }
+            .clock-America-child
+            {
+                width: 180px;
+                height: 180px;
+                border: 3px solid orange;
+                border-radius: 50%;
+                box-shadow: 0 0 10px 0 black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            .clock
+            {
+                width: 800px;
+                height: 800px;
+                background: #ccc;
+                border: 3px solid black;
+                border-radius: 50%;
+                box-shadow: 0 0 10px 0 black;
+                position: relative;
+                transform:translate(-50%,0);
+                left: 50%;
+      
+            }
+            .clock-italy
+            {
+                width: 200px;
+                height: 200px;
+                border: 3px solid black;
+                box-shadow: 0 0 10px 0 black;
+                border-radius: 50%;
+                position: relative;
+                background-color: white;
+                
+            }
+            .clock-italy-child
+            {
+                width: 180px;
+                height: 180px;
+                background: #ccc;
+                border: 3px solid black;
+                border-radius: 50%;
+                box-shadow: 0 0 10px 0 black;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            .num
+            {
+                height: 100%;
+                position: absolute;
+                left: 50%;
+            }
+            .num span{
+
+                width: 1em;
+                font-size: 20px;
+                line-height: 2em;
+                color: brown;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .num1
+            {
+                transform: rotate(30deg);
+            }
+            .num1 span
+            {
+                transform: rotate(-30deg);
+            }
+            .num2
+            {
+                transform: rotate(60deg);
+            }
+            .num2 span
+            {
+                transform: rotate(-60deg);
+            }
+            .num3
+            {
+                transform: rotate(90deg);
+            }
+            .num3 span
+            {
+                transform: rotate(-90deg);
+            }
+            .num4
+            {
+                transform: rotate(120deg);
+            }
+            .num4 span
+            {
+                transform: rotate(-120deg);
+            }
+            .num5
+            {
+                transform: rotate(150deg);
+            }
+            .num5 span
+            {
+                transform: rotate(-150deg);
+            }
+            .num6
+            {
+                transform: rotate(180deg);
+            }
+            .num6 span
+            {
+                transform: rotate(-180deg);
+            }
+            .num7
+            {
+                transform: rotate(210deg);
+            }
+            .num7 span
+            {
+                transform: rotate(-210deg);
+            }
+            .num8
+            {
+                transform: rotate(240deg);
+            }
+            .num8 span
+            {
+                transform: rotate(-240deg);
+            }
+            .num9
+            {
+                transform: rotate(270deg);
+            }
+            .num9 span
+            {
+                transform: rotate(-270deg);
+            }
+            .num10
+            {
+                transform: rotate(300deg);
+            }
+            .num10 span
+            {
+                transform: rotate(-300deg);
+            }
+            .num11
+            {
+                transform: rotate(330deg);
+            }
+            .num11 span
+            {
+                transform: rotate(-330deg);
+            }
+            .num12
+            {
+                transform: rotate(360deg);
+            }
+            .num12 span
+            {
+                transform: rotate(-360deg);
+            }
+            
+                
+            
+           .hour-hand
+            {
+                width: 5px;
+                height: 25%;
+                background-color: red;
+                transform-origin: 50% 80%;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                font-weight: bold;
+                z-index: 1;
+            }
+            .min-hand
+            {
+                width: 3px;
+                height: 40%;
+                background-color: blue;
+                transform-origin: 50% 80%;
+                position: absolute;
+                top: 18%;
+                left: 50%;
+                z-index: 1;
+            }
+            .second-hand
+            {
+                width: 1px;
+                height: 50%;
+                background-color: black;
+                transform-origin: 50% 80%;
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                z-index: 1;
+            }
+            .hour-hand1
+            {
+                width: 5px;
+                height: 25%;
+                background-color: red;
+                transform-origin: 50% 80%;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                font-weight: bold;
+            }
+            .min-hand1
+            {
+                width: 3px;
+                height: 40%;
+                background-color: blue;
+                transform-origin: 50% 80%;
+                position: absolute;
+                top: 18%;
+                left: 50%;
+            }
+            .second-hand1
+            {
+                width: 1px;
+                height: 50%;
+                background-color: black;
+                transform-origin: 50% 80%;
+                position: absolute;
+                top: 10%;
+                left: 50%;
+            }
+
+            .hour-hand2
+            {
+                width: 5px;
+                height: 25%;
+                background-color: red;
+                transform-origin: 50% 80%;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                font-weight: bold;
+            }
+            .min-hand2
+            {
+                width: 3px;
+                height: 40%;
+                background-color: blue;
+                transform-origin: 50% 80%;
+                position: absolute;
+                top: 18%;
+                left: 50%;
+            }
+            .second-hand2
+            {
+                width: 1px;
+                height: 50%;
+                background-color: black;
+                transform-origin: 50% 80%;
+                position: absolute;
+                top: 10%;
+                left: 50%;
+            }
+        </style>
+        <script>
+            const secondHand = document.querySelector('.second-hand');
+            const hourHand = document.querySelector('.hour-hand');
+            const minHand = document.querySelector('.min-hand');
+            let timeDiv = document.querySelector('.time');
+            const secondHand1 = document.querySelector('.second-hand1');
+            const hourHand1 = document.querySelector('.hour-hand1');
+            const minHand1 = document.querySelector('.min-hand1');
+            const  italyWatch = document.querySelector('.clock-italy-child');
+            const secondHand2 = document.querySelector('.second-hand2');
+            const hourHand2 = document.querySelector('.hour-hand2');
+            const minHand2 = document.querySelector('.min-hand2');
+            const  AmericaWatch = document.querySelector('.clock-America-child');
+            console.log(AmericaWatch);
+            function changeSize()
+            {
+                if(italyWatch.style.width <= 200)
+                {
+                    let span1 = italyWatch.querySelectorAll('span');
+                    console.log(span1);
+                    span1.forEach(span =>
+                    {
+                        span.style.fontSize = '10px';
+                    })
+                    italyWatch.style.backgroundColor = "whitesmoke";
+
+            }
+           
+            }
+            changeSize();
+
+            function changeSize1()
+            {
+                if(AmericaWatch.style.width <= 200)
+                {
+                    let span1 = AmericaWatch.querySelectorAll('span');
+                    console.log(span1);
+                    span1.forEach(span =>
+                    {
+                        span.style.fontSize = '10px';
+                    })
+                    AmericaWatch.style.backgroundColor = "#FAEBD7";
+
+            }
+           
+           
+            }
+            changeSize1();
+            changeSize();
+
+            function setDate()
+            {
+                const now = new Date();
+                const seconds = now.getSeconds();
+                console.log(seconds);
+                const secondsDeg = (seconds*6);
+                secondHand.style.transform = `rotate(${secondsDeg}deg)`;
+
+                const minutes = now.getMinutes();
+                const minutesDeg = (minutes*6);
+                minHand.style.transform = `rotate(${minutesDeg}deg)`;
+
+                const hours = now.getHours();
+                const hoursDeg = (hours*30 + minutes*0.5 );
+                hourHand.style.transform = `rotate(${hoursDeg}deg)`;
+
+            
+            }
+
+             function setDateItaly()
+            {
+                const now = new Date();
+                const seconds = now.getSeconds();
+                console.log(seconds);
+                const secondsDeg = (seconds*6);
+                secondHand1.style.transform = `rotate(${secondsDeg}deg)`;
+
+                const minutes = now.getMinutes();
+                const minutesDeg = (minutes*6);
+                minHand1.style.transform = `rotate(${minutesDeg}deg)`;
+
+                const hours = now.getHours();
+                const hoursDeg = (hours*30 + minutes*0.5 - 150 );
+                hourHand1.style.transform = `rotate(${hoursDeg}deg)`;
+
+            
+            }
+
+            function setDateAmerica()
+            {
+                const now = new Date();
+                const seconds = now.getSeconds();
+                console.log(seconds);
+                const secondsDeg = (seconds*6);
+                secondHand2.style.transform = `rotate(${secondsDeg}deg)`;
+
+                const minutes = now.getMinutes();
+                const minutesDeg = (minutes*6);
+                minHand2.style.transform = `rotate(${minutesDeg}deg)`;
+
+                const hours = now.getHours();
+                const hoursDeg = (hours*30 + minutes*0.5 - 330 );
+                hourHand2.style.transform = `rotate(${hoursDeg}deg)`;
+
+            }
+            function updateTime()
+            {
+                let now = new Date();
+                let timeDiv = document.querySelector('.time');
+                let time = "Time for reference... :" + now.getHours() + "h. " + now.getMinutes() + "m ." + now.getSeconds();
+                timeDiv.innerHTML = time;
+            }
+            setInterval(setDate,1000);
+            setInterval(setDateItaly,1000);
+            setInterval(setDateAmerica,1000);
+            setInterval(updateTime,1000);
+        </script>
+    </body>
+</html>
