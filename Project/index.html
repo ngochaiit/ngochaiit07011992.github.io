@@ -3,11 +3,87 @@
         <title>EasyPhim</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/hover.css">
+        <link rel="stylesheet" type="text/css" href="css/popup.css">
         <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.min.css">
         <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.css">
+        
     </head>
    <body>
+       
     <div class = "page">
+            <div class="pop-up login" id="login">
+           
+                    <div class="option-choice">
+                        <div class="login" style="background: gray"><p>Đăng Nhập</p></div>
+                        <div class="resiger"><p>Đăng Kí</p></div>
+                    </div>
+                   <div class="total-popup">
+                         <div class="facebook">
+                                 <div class="icon-facebook"><i class="fab fa-facebook-square"></i></div>
+                                 <div class="text-facebook"><p>Đăng nhập bằng Facebook</p></div>
+                             </div>
+                             <div class="facebook">
+                                  <div class="icon-facebook google"><i class="fab fa-google"></i></div>
+                                  <div class="text-facebook google"><p>Đăng nhập bằng Google</p></div>
+                              </div>
+                              
+                                    <div class="email account">
+                                            <input type="email" placeholder='&#xf075; Email...' required>
+                                            <div class="icon-mail"></div>
+                                        </div>
+                                        <div class="email password">
+                                                <input type="password" placeholder="&#xf02b; password" required>
+                                                <div class="icon-mail"></div>
+                                            </div>
+                             
+                                  <button class="login-popup"><a href="">Đăng Nhập</a></button>
+                                  <a href="" class="fogortPass">Quên mật khẩu? Nhấn vào đây</a>
+              
+                   </div>
+     
+            </div>
+
+            <div class="pop-up1 login" id="resigter">
+           
+                    <div class="option-choice">
+                        <div class="login"><p>Đăng Nhập</p></div>
+                        <div class="resiger" style="background: gray;"><p>Đăng Kí</p></div>
+                    </div>
+                   <div class="total-popupResigter">
+                         <div class="facebook">
+                                 <div class="icon-facebook"><i class="fab fa-facebook-square"></i></div>
+                                 <div class="text-facebook"><p>Đăng nhập bằng Facebook</p></div>
+                             </div>
+                             <div class="facebook">
+                                  <div class="icon-facebook google"><i class="fab fa-google"></i></div>
+                                  <div class="text-facebook google"><p>Đăng nhập bằng Google</p></div>
+                              </div>
+                              
+                                    <div class="email account">
+                                            <input type="email" placeholder='&#xf075; Email...' required>
+                                            <div class="icon-mail"></div>
+                                        </div>
+                                        <div class="email password">
+                                                <input type="password" placeholder="&#xf02b; password" required>
+                                                <div class="icon-mail"></div>
+                                            </div>
+                                        
+                                            <div class="email repeat-psw">
+                                                    <input type="password" placeholder="&#xf02b; Please repeat your password..." required>
+                                                    <div class="icon-mail"></div>
+                                                </div>
+                                                <div class="email fullname">
+                                                        <input type="password" placeholder="&#xf02b; Please fill your full name" required>
+                                                        <div class="icon-mail"></div>
+                                                    </div>
+                             
+                                  <button class="login-popup"><a href="">Đăng Nhập</a></button>
+                                  <a href="" class="fogortPass">Quên mật khẩu? Nhấn vào đây</a>
+              
+                   </div>
+     
+            </div>
         <header>
             <div class="header_top">
                 <div class="header_top content">
@@ -24,15 +100,15 @@
                     <li><a href=""><i class="fas fa-cube"></i>Learning Method</a></li></div>
                     <div class="icon"><img src="image/icon.JPG"></div>
                     <div class="btn__login">
-                        <button class="btn1">Đăng Nhập</button>
-                        <button class="btn2">Đăng kí</button>
+                        <button class="btn1" id="btnLogin">Đăng Nhập</button>
+                        <button class="btn2" id="btnSignUp">Đăng kí</button>
     
                     </div>
                 </ul>
             </nav>
             <div class="header_middle hide">
                 <div class="ws_images">
-                             <img src="http://www.studyphim.vn/assets/img/slider-bg.jpg" class="bg-image"> 
+                             <img src="http://www.studyphim.vn/assets/img/slider-bg.jpg" class="bg-image" id="bg"> 
                                 <div class="group-image-content" style="display: flex">
                                     <div class="group-intro-text" style="width: 50%">
                                         <h1>Bí Kíp Học Tiếng Anh Qua  Phim <br> Phụ Đề Song Ngữ</h3>
@@ -44,7 +120,7 @@
                                         <button class="try_learn"><a href="">Học Thử Ngay!</a></button>
                                     </div>
                                    
-                                    <div class="phone-group-image" style="width: 50%;">
+                                    <div class="phone-group-image" style="width: 50%;" id="phone-group">
                                         <img src="http://www.studyphim.vn/assets/img/iphone.png" style="top: 163px; left: 30px;">
                                         <img src="http://www.studyphim.vn/assets/img/ipad.png" style="top: 50px ;left: 88px;">
                                         <img src="http://www.studyphim.vn/assets/img/imac.png" style="top: 0px; right: 116px;">
@@ -55,23 +131,23 @@
                                         <div>
                                             <a href="#" title="">
                                                 <span>
-                                                    <img src="" /></span>
+                                                    <img src="http://www.studyphim.vn/system/sliders/3231/original/arrested-development-season-5-1200x520.jpg" /></span>
                                             </a>
                                             <a href="#" title="">
                                                 <span>
-                                                    <img src="" /></span>
+                                                    <img src="http://www.studyphim.vn/system/sliders/3232/original/The-World-at-War-Hitler-012.jpg" /></span>
                                             </a>
                                             <a href="#" title="">
                                                 <span>
-                                                    <img src="" /></span>
+                                                    <img src="http://www.studyphim.vn/system/sliders/3234/original/winchester-1887.jpg" /></span>
                                             </a>
                                             <a href="#" title="">
                                                 <span>
-                                                    <img src=""  /></span>
+                                                    <img src="http://www.studyphim.vn/system/sliders/3233/original/1_de503al9gwkaro453vfn9g.jpg"  /></span>
                                             </a>
                                             <a href="#" title="">
                                                 <span>
-                                                    <img src="" /></span>
+                                                    <img src="http://www.studyphim.vn/system/sliders/3235/original/moll.jpg" /></span>
                                             </a>
                                         </div>
                                     </div>
@@ -145,7 +221,7 @@
                             </div>
                             <div class="respond-chat">
                                 <textarea placeholder="texting here.."></textarea>
-                                <button class="send-questtion"><span>Gửi Câu Hỏi</span></button>
+                                <button class="send-question"><span>Gửi Câu Hỏi</span></button>
                                 <div class="list-question">
                                     <div class="question">
                                         <span>Đặng Châu Anh:</span><span> How to change my password and account?</span>
@@ -176,7 +252,7 @@
                     </div>
                 </div>
                 <div class="adv-list">
-                    <img src="">
+                    <img src="http://www.studyphim.vn/assets/img/ads/high/highly-1.jpg">
                 </div>
     
                 <div class="side-box popularfilm">
@@ -284,6 +360,7 @@
     
                </footer>
     </div>
+    <script src="js/logic.js"></script>
    </body>
 
 </html>

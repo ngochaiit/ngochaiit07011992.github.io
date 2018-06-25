@@ -1,0 +1,30 @@
+.btn1:hover
+{
+ background-color: azure;
+ cursor: pointer;
+}
+.box:hover
+{
+ cursor: pointer;
+
+}
+button.try_learn:hover
+{
+    cursor: pointer;
+}
+.input-search button:hover
+{
+    cursor: pointer;
+}
+.youtube-follow:hover
+{
+    cursor:pointer;
+}
+.send-question, .answer:hover
+{
+    cursor: pointer;
+}
+.option-time a:hover{
+    cursor: pointer;
+    background-color: gray;
+}
