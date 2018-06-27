@@ -1,0 +1,105 @@
+/*moblie phone*/
+@media only screen and (max-width: 1200px)
+{
+    .btn__login .btn1 p
+    {
+        font-size: 10px;
+       
+    }
+    .btn__login .btn2 p
+    {
+        font-size: 10px;
+       
+    }
+}
+
+@media only screen and (max-width: 1080px)
+{
+    .try_learn, .hotline
+    {
+        display: none;
+    }
+    .icon
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:800px)
+{
+    .ws_bullets
+    {
+        display: none;
+    }
+    .group-intro-text
+    {
+        display: none;
+    }
+    aside
+    {
+        display: none;
+    }
+    article.main-page
+    {
+        width: 100%;
+    }
+    .phone-group-image
+    {
+        display: none !important;
+    }
+    .box-content h1
+    {
+        font-size: 10px;
+    }
+    .box-content  p {
+        font-size: 7px;
+        padding-right: 5px;
+    }
+    .process {
+        height: 15px;
+    }
+    .movies-name h2
+    {
+        font-size: 8px;
+    }
+    .movies-name p 
+    {
+        font-size: 7px;
+    }
+    .number span
+    {
+        font-size: 7px;
+    }
+    .col
+    {
+        grid-template-rows:200px 200px;
+    }
+    .option
+    {
+        display: none;
+    }
+    .btn__login
+    {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 500px)
+{
+    .header_bottom
+    {
+        display: none;
+    }
+    header{
+        height: auto;
+    }
+    .col{
+       grid-template-columns: 100%;
+       grid-template-rows: repeat(8,300px);
+       grid-row-gap: 10px;
+    }
+    footer{
+        display: none;
+    }
+}
+
+

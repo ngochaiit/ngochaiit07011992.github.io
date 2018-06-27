@@ -5,10 +5,18 @@ let loginForm = document.getElementById('login');
 let btnLogin = document.getElementById('btnLogin');
 let btnResigter = document.getElementById('btnSignUp');
 let ResigterForm = document.getElementById('resigter');
-console.log(loginForm);
+let contentFilm = document.querySelectorAll('.col');
+let col1 = document.querySelector('.col1');
+let col2 = document.querySelector('.col2');
+let col3 = document.querySelector('.col3');
+let col4 = document.querySelector('.col4');
+let col5 = document.querySelector('.col5');
+let contentSideFilm = document.querySelectorAll('.code-side');
+let colSide1 = document.querySelector('.side1');
+let colSide2 = document.querySelector('.side2');
 
-console.log(bgImages);
-console.log(groupIphones);
+console.log(contentFilm);
+
 let index = 0;
 //change back-ground image for 5s
 setInterval(function()
@@ -49,6 +57,105 @@ function popupResigter()
   ResigterForm.style.transition = "2s";
   ResigterForm.style.display = "block";
 }
+//add frame to col
+  // function addLayout()
+  // {
+  //   contentFilm.forEach(content =>
+  //     {
+  //       content.innerHTML = 
+  //       '<div class = "row"><div class ="col-md3"><div class = "thumbnail"><a herf =""><img src =""></a></div></div></div>' +
+  //       '<div class = "caption"><div class ="process"><div class ="movie"></div></div></div>'
+  //     })
+  // }
+  //addLayout();
+
+  function homePage(agruments)
+  {
+    data.forEach (e =>
+    {
+      if(e.tag == "PHIM HỌC TIẾNG ANH NỔI BẬT")
+      {
+        col1.innerHTML += 
+        `
+        
+       <div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><a href=""><img src="${e.img}"></a></div></div> 
+        <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+       `
+      }
+      else if(e.tag == "PHIM HỌC TIẾNG ANH MỚI NHẤT")
+      {
+        col2.innerHTML +=
+        `
+        <div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><a href=""><img src="${e.img}"></a></div></div> 
+        <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        `
+      }
+      else if(e.tag == "PHIM HỌC TIẾNG ANH LEVEL 1")
+      {
+        col3.innerHTML += 
+        `
+        <div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><a href=""><img src="${e.img}"></a></div></div> 
+        <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        `
+      }
+
+      else if(e.tag == "PHIM HỌC TIẾNG ANH LEVEL 2")
+      {
+        col4.innerHTML += 
+        `
+        <div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><a href=""><img src="${e.img}"></a></div></div> 
+        <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        `
+      }
+
+      else if(e.tag == "PHIM HỌC TIẾNG ANH LEVEL 3")
+      {
+        col5.innerHTML +=
+        `
+        <div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><a href=""><img src="${e.img}"></a></div></div> 
+        <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        `
+      }
+      else if(e.tag == "Phim lẻ xem nhiều")
+      {
+        colSide1.innerHTML += 
+        `
+        <div class="movie-imgSide">
+                                <div class="thumbnail-side">
+                                    <a href=""><img src="${e.img}"></a>
+                                </div>
+                                <div class="side-content">
+                                    <h2>${e.name}</h2>
+                                    <p>${e.nameVietnamese}</p>
+                                </div>
+                            </div>
+        `
+      }
+
+      else if(e.tag == "Phim bộ xem nhiều")
+      {
+        colSide2.innerHTML += 
+        `
+        <div class="movie-imgSide">
+                                <div class="thumbnail-side">
+                                    <a href=""><img src="${e.img}"></a>
+                                </div>
+                                <div class="side-content">
+                                    <h2>${e.name}</h2>
+                                    <p>${e.nameVietnamese}</p>
+                                </div>
+                            </div>
+       
+        `
+      }
+
+    })
+
+  }
+  homePage();
+
+  
+
 btnLogin.addEventListener('click',popupLogin);
 btnResigter.addEventListener('click',popupResigter);
 

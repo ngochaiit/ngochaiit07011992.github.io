@@ -28,3 +28,11 @@ button.try_learn:hover
     cursor: pointer;
     background-color: gray;
 }
+ h2:hover{
+    cursor: pointer;
+    color: #FF6600;
+}
+h1:hover{
+    cursor: pointer;
+    color: #FF6600;
+}
