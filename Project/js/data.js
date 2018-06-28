@@ -441,5 +441,126 @@ const data = [
         tag: "Phim bộ xem nhiều",
         number:"2,345",
 
+    },
+
+    {
+        name: "MONSTER",
+        nameVietnamese: "Siêu thú cuồng nộ",
+        img: "image/phim53.jpg",
+        tag: "Phim lẻ trang search",
+        number:"1,345",
+
+    },
+    {
+        name: "ANT - MAN",
+        nameVietnamese: "Người Kiến",
+        img: "image/phim54.jpg",
+        tag: "Phim lẻ trang search",
+        number:"9,432",
+
+    },
+    {
+        name: "THE LORD OF THE RING",
+        nameVietnamese: "Chúa tể những chiếc nhẫn",
+        img: "image/phim55.jpg",
+        tag: "Phim lẻ trang search",
+        number:"12,432",
+
+    },
+    {
+        name: "IRON - MAN 3",
+        nameVietnamese: "Người sắt - Season3",
+        img: "image/phim56.jpg",
+        tag: "Phim lẻ trang search",
+        number:"2,432",
+
+    },
+    {
+        name: "BATMAN",
+        nameVietnamese: "Siêu anh hùng BatMan",
+        img: "image/phim57.jpg",
+        tag: "Phim lẻ trang search",
+        number:"4,567",
+
+    },
+    {
+        name: "THE CAPTAIN OF AMERICAN",
+        nameVietnamese: "Chiến binh mùa đông",
+        img: "image/phim58.jpg",
+        tag: "Phim lẻ trang search",
+        number:"7,267",
+
+    },
+    {
+        name: "THE AVENGERS 2",
+        nameVietnamese: "Biệt đội siêu anh hùng - Season2",
+        img: "image/phim59.jpg",
+        tag: "Phim lẻ trang search",
+        number:"6,785",
+
+    },
+    {
+        name: "THE GOD FATHER",
+        nameVietnamese: "Bố Già - Season1",
+        img: "image/phim60.jpg",
+        tag: "Phim lẻ trang search",
+        number:"8,643",
+
+    },
+    {
+        name: "PACIFIC RIM",
+        nameVietnamese: "Siêu đại chiến thái bình dương",
+        img: "image/phim61.jpg",
+        tag: "Phim lẻ trang search",
+        number:"4,432",
+
+    },
+    {
+        name: "Spider Man 1",
+        nameVietnamese: "Người nhện - season1",
+        img: "image/phim62.jpg",
+        tag: "Phim lẻ trang search",
+        number:"9,234",
+
+    },
+    {
+        name: "THE TERMINTOR 5",
+        nameVietnamese: "Kẻ hủy diệt - season5",
+        img: "image/phim63.png",
+        tag: "Phim lẻ trang search",
+        number:"9,432",
+
+    },
+    {
+        name: "AVATAR - 2009",
+        nameVietnamese: "Thế thân",
+        img: "image/phim64.jpg",
+        tag: "Phim lẻ trang search",
+        number:"12,432",
+
+    },
+    {
+        name: "WONDER WOMEN",
+        nameVietnamese: "Nữ siêu chiến binh Amazon",
+        img: "image/phim65.png",
+        tag: "Phim lẻ trang search",
+        number:"3,432",
+
+    },
+    {
+        name: "THE EXPENDABLES #",
+        nameVietnamese: "Biệt đội đánh thuê - Season3",
+        img: "image/phim67.jpg",
+        tag: "Phim lẻ trang search",
+        number:"9,432",
+
+    },
+    {
+        name: "300",
+        nameVietnamese: "300 chiến binh",
+        img: "image/phim66.jpg",
+        tag: "Phim lẻ trang search",
+        number:"9,432",
+
     }
 ]
