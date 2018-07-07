@@ -7,6 +7,7 @@ header{
     height: 100px;
     text-align: center;
     display: flex;
+    position: relative;
     
 }
 form{
@@ -59,4 +60,70 @@ button[name = search] i{
 grid-template-rows: 300px 300px;
 grid-column-gap: 1%;
 padding-top: 40px;
+}
+.suggestions
+{
+    position: absolute;
+    width: 70%;
+   
+    text-align: left !important;
+    margin: 0;
+    display: none;
+    background-color: whitesmoke;
+  
+}
+.suggestions li a{
+    display: flex;
+    width: 90%;
+    height: 60px;
+    padding-top: 10px;
+
+    
+}
+.image-search
+{
+    width: 15%;
+    padding-left: 10px;
+    height: 80%;
+}
+.image-search img{
+    width: 100%;
+    height: 100%;
+  
+}
+.content-search 
+{
+    width: 64%;
+
+}
+.list-search{
+    text-decoration: none;
+}
+.content-search h4:first-child{
+    margin: 0px;
+    padding: 0px;
+    color: #444;
+font-weight: 600;
+font-size: 14px;
+pointer-events: none;
+}
+.content-search h4:nth-child(2)
+{
+    margin: 0;
+    padding: 0px;
+    font-style: italic;
+    font-size: 12px;
+    pointer-events: none;
+}
+.suggestions li:hover{
+    background: #FE6B04;
+    cursor: pointer;
+}
+a:hover{
+    color: #FE6B04;
+    cursor: pointer;
+}
+.movies-name a{
+    text-decoration: none;
+    color: #555;
 }

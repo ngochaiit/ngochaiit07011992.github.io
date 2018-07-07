@@ -1,17 +1,114 @@
 const data = [
     {
-        name:"Extra",
+        name:"EXTRA",
         nameVietnamese: "Extra",
         img: "image/phim1.jpg",
         tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
         number:"123,567",
+        intro: "Bộ phim extra English gồm 30 tập đây là một phim học tiếng Anh được rất nhiều người ưa thích trên thế giới. Ra đời sau các tập phim Friends trước, Phim extra song ngữ Anh Việt dường như ưu việt hơn về mặt học tiếng Anh giao tiếp, nhất là những người mới bắt đầu học. Học tiếng anh qua phim extra giúp người mới bắt đầu học trau dồi được kỹ năng phát âm tiếng anh cùng một số câu giao tiếp đơn giản được biên soạn kỹ càng trong phim extra này. Hãy cùng studyphim.vn trải nghiệm hơn 30 tập phim extra phụ đề tiếng anh với sub song ngữ thông minh nhé. ",
+        episode: "30",
+        popular: "Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
     },
+    {
+        name:"HOME ALONE 1",
+        nameVietnamese: "Ở NHÀ MỘT MÌNH 1 ",
+        img: "image/phim68.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"123,567",
+        intro: "Home Alone là câu chuyện về một đứa bé trai tám tuổi, do sự nhầm lẫn đã bị bỏ lại sau chuyến bay đến Paris trong kỳ nghỉ giáng sinh của gia đình. Trong khi tận hưởng sự tự do khi được ở nhà một mình, cậu được chào đón bởi hai kẻ trộm là Harry và Marv. Một chuỗi hài hước với những cái bầy vui nhộn mà 2 tên trộm ngớ ngẩn mắc phải do cậu bé Kevin tạo ra ",
+        episode: "30",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name:"Gotham - Season 1",
+        nameVietnamese: "Gotham Thành Phố Tội Lỗi 1 ",
+        img: "image/phim69.png",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"123,567",
+        intro: "Gotham tập trung vào thanh tra Jim Gordon và câu chuyện xuất phát từ lúc ông mới được nhận vào làm việc tại Sở cảnh sát thành phố Gotham. Vụ án đầu tiên mà Gordon phải xử lý chính là vụ việc vợ chồng tỷ phú Thomas và Martha Wayne bị sát hại trong một con hẻm nhỏ. Trong lúc điều tra, Gordon đã có dịp gặp gỡ cậu con trai ",
+        episode: "30",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name:"BREAKING BAD - SEASON 1",
+        nameVietnamese: "Phá Luật - Phần 1 ",
+        img: "image/phim70.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"123,567",
+        intro: "Breaking Bad - Season 1 (Phá Luật 1) được đánh giá là một trong những phim truyền hình hay nhất trong lịch sử, là câu chuyện kể về cuộc sống của Walter White – một giáo viên nhút nhát dạy Hoá cấp 3 có cuộc sống nhàm chán tại New Mexico với người vợ đang mang thai và đứa con trai thiếu niên mắc bệnh bại não. Cuộc sống của Walter phức tạp hơn khi, vào ngày sau sinh nhật thứ 50 của mình, ông được chẩn đoán ở giai đoạn cuối của căn bệnh ung thư phổi . Để đảm bảo tương lai cho gia đình, ông và Jesse Pinkman - cậu học trò cũ của mình, một tên buôn ma tuý, đã hợp tác cùng nhau sản xuất ma tuý đá cao cấp đem bán ra thị trường. Walter bắt đầu đối diện với cuộc sống bí mật của mình, và tìm mọi cách để che giấu danh tính…Mọi chuyện bi hài nảy sinh từ đây ",
+        episode: "30",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name:"HOW I MET YOUR MOTHER - SEASON 4",
+        nameVietnamese: "Khi Bố Gặp Mẹ 4 ",
+        img: "image/phim71.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"986,876",
+        intro: "Sau thời gian dài “cưa cẩm” cuối cùng Stella cũng đồng ý với lời cầu hôn của Ted nhưng sự đời có mấy ai ngờ Stella đã rời bỏ Ted ngay trong ngày cưới để trở lại với người tình cũ. Mối quan hệ giữa Robin và Barney giống như trò chơi trốn tìm. How I Met Your Mother còn đan xen nhiều tình huống hài hước, lãng mạn mà chắc chắn sẽ giúp người xem có những phút giây thư giãn thoải mái ",
+        episode: "30",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name:"HOW I MET YOUR MOTHER - SEASON 3",
+        nameVietnamese: "Khi Bố Gặp Mẹ 3 ",
+        img: "image/phim72.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"123,567",
+        intro: "au cuộc tình tan vỡ với Ted, Robin từ phương xa trở về với người bạn trai mới. Đang trong cơn buồn bực, tức giận Ted đã bị trúng tiếng sét ái tình với Stella sau khi cô bác sĩ da liễu này giúp anh xóa hình xăm. Tuy nhiên Ted đã có xích mích với người bạn thân thiết Barney sau vụ Barney “lùm xùm” với “người cũ” Robin liệu câu chuyện tình của Ted và Stella sẽ đi đến đâu? Tình bạn thân thiết giữa Ted và Barney có thể được hàn gắn ",
+        episode: "30",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name:"HOW I MET YOUR MOTHER - SEASON 2",
+        nameVietnamese: "Khi Bố Gặp Mẹ 2 ",
+        img: "image/phim73.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"5,672",
+        intro: "Tiếp nối câu chuyện của “How I Met Your Mother”, “How I Met Your Mother 2” tiếp tục khai thác câu chuyện của anh chàng Ted. Sau một thời gian dài tìm kiếm cuối cùng “ý trung nhân” của Ted cũng xuất hiện đó là cô gái xinh đẹp và bí ẩn Robin nhưng liệu mọi thứ có trọn vẹn khi muôn vàn rắc rối đang bủa vây Ted và Robin? ",
+        episode: "30",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name:"The Fault in Our Stars",
+        nameVietnamese: "Lỗi tại duyên số ",
+        img: "image/phim74.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"123,567",
+        intro: "The Fault in Our Stars là một câu chuyện đầy nhân văn về sự sống, cái chết và tình yêu với những xúc cảm ngọt ngào xen lẫn nỗi đau quặn thắt khiến bất cứ độc giả nào cũng thương cảm ",
+        episode: "30",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name:"RISE OF THE GUARDIANS",
+        nameVietnamese: "Sự Trổi Dậy Của Các Vị Thần ",
+        img: "image/phim75.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"123,567",
+        intro: "Sự trỗi dậy của các Vệ thần là một bộ phim hoạt hình giả tưởng/phiêu lưu 3D dựa trên loạt sách The Guardians of Childhood của William Joyce và phim ngắn The Man in the Moon của Joyce và Reel FX. ",
+        episode: "30",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
+    },
+
     {
         name:"English Communication",
         nameVietnamese:"giao tiếp tiếng anh cơ bản",
         img: "image/phim2.jpg",
         tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
         number:"34,123",
+        intro:"68 Videos học tiếng anh giao tiếp cơ bản với các chủ đề khác nhau trong cuộc sống, sử dụng phụ đề song ngữ Anh - Việt, các chức năng luyện nghe và làm chậm giọng nói.. của StudyPhim sẽ giúp các bạn học tốt giao tiếp tiếng anh trong thời gian ngắn nhất. Chương trình thích hợp với những bạn muốn học tiếng anh cơ bản do đã mất gốc tiếng anh vì video nói rất chậm , dễ hiểu . Từ vựng tiếng anh đơn giản , phù hợp giao tiếp cơ bản trong cuộc sống. BQT chúc mọi người học tốt với chương trình anh văn giao tiếp hiệu quả này nhé ",
+        episode: "68",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
     },
 
     {
@@ -20,6 +117,10 @@ const data = [
         img: "image/phim3.jpg",
         tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
         number:"67,435",
+        intro:"Young & Hungry kể về Josh, một doanh nhân trẻ quyết định thuê một Blogger chuyên về ẩm thực, Gabi, làm đầu bếp riêng cho mình. Bất chấp hết thảy để có thể nắm được công việc mới này, Gabi đã trổ hết kỹ năng để chứng minh cho Josh và trợ lý của anh, Elliot, thấy được tài năng của mình. Bộ phim dựa trên cuộc đời có thật của Blogger ẩm thực tại San Francisco - Gabi Moskowitz.",
+        episode: "10",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
     },
 
     {
@@ -28,6 +129,10 @@ const data = [
         img: "image/phim4.jpg",
         tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
         number:"129,567",
+        intro:"Xem phim how i met your mother là câu chuyện được nhân vật chính - Ted Mosby kể lại cho 2 đứa con của mình về câu chuyện tình của bố mẹ chúng. Khi anh chàng 27 tuổi, Ted cảm thấy muốn kết hôn sau khi cậu bạn cùng phòng, Marshall đính hôn với cô bạn thân từ thời đại học của anh, Lily sau 9 năm hẹn hò. Với sự giúp đỡ của 'chuyên gia tán gái' Barney, Ted đã bước vào cuộc tìm kiếm “một nửa” của mình. Bộ phim vô cùng hài hước và là nguồn tài liệu để học nói tiếng anh cực kì hiệu quả.",
+        episode: "22",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
     },
 
     {
@@ -36,6 +141,10 @@ const data = [
         img: "image/phim5.jpg",
         tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
         number:"126,456",
+        intro: "Phim Friends là bộ phim hài rất nổi tiếng ở Mỹ gồm 10 seasons được dùng trong hầu hết các trung tâm dạy tiếng anh ở nước Mỹ như là một công cụ trong việc nâng cao về việc luyện nghe nói, phản xạ trong việc học tiếng anh dành cho sinh viên nước ngoài. Một điều quan trọng chính là bộ phim friends phụ đề tiếng anh đã mang lại cho khán giả các nước khác một cái nhìn cực kì chính xác, chân thật về xã hội Mỹ, về phong cách sống, cách xử sự của người Mỹ. Chính vì điều này website studyphim.vn đã biên soạn hơn 10 season phim friends phụ đề song ngữ anh việt giúp cho việc học tiếng anh hiệu quả. Hãy cùng trải nghiệm việc học tiếng anh qua phim friends với studyphim ngay nhé.",
+        episode:"24",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
     },
 
     {
@@ -44,6 +153,10 @@ const data = [
         img: "image/phim6.jpg",
         tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
         number:"79,432",
+        intro: "Xem phim how i met your mother là câu chuyện được nhân vật chính - Ted Mosby kể lại cho 2 đứa con của mình về câu chuyện tình của bố mẹ chúng. Khi anh chàng 27 tuổi, Ted cảm thấy muốn kết hôn sau khi cậu bạn cùng phòng, Marshall đính hôn với cô bạn thân từ thời đại học của anh, Lily sau 9 năm hẹn hò. Với sự giúp đỡ của 'chuyên gia tán gái' Barney, Ted đã bước vào cuộc tìm kiếm “một nửa” của mình. Bộ phim vô cùng hài hước và là nguồn tài liệu để học nói tiếng anh cực kì hiệu quả. ",
+        episode:"22",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
 
     },
 
@@ -53,6 +166,10 @@ const data = [
         img: "image/phim7.png",
         tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
         number:"125,457",
+        intro: "Phim tập trung vào khoa học Barry Allen, người trở thành siêu anh hùng với sức mạnh và tốc độ đáng kinh ngạc sau khi bị sét đánh do vụ nổ máy gia tốc Harrison Wells.",
+        episode:"23",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
 
     },
     
@@ -62,6 +179,90 @@ const data = [
         img: "image/phim8.jpg",
         tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
         number:"29,145",
+        intro:"Trong một lần tại Starling City, Barry đã vô tình bị ảnh hưởng bởi vụ nổ phòng thí nghiệm của S.T.A.R khiến anh bị bất tỉnh nhiều ngày trong bệnh viện. Khi tỉnh dậy, anh ta đã phát hiện ra rằng mình có khả năng đặc biệt đó là tăng tốc độ cơ thể và di chuyển siêu nhanh. Kể từ đây, huyền thoại về người anh hùng Flash bắt đầu",
+        episode:"23",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "THE GOD FATHER",
+        nameVietnamese: "Bố Già - Season1",
+        img: "image/phim60.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"8,643",
+        intro:"The Godfather 1 được chuyển thể từ tiểu thuyết cùng tên của nhà văn Mario Puzo. Vito Corleone là ông trùm khét tiếng nhất tại Mỹ lúc bấy giờ. Tuy nhiên, con trai út của ông - Michael sau khi trở về từ Thế chiến II quyết định không tham gia bất cứ phi vụ gì của gia đình. Nhưng trong đám cưới của con gái Vito, một trận chiến khốc liệt nổ ra trong thế giới tội phạm, Michael chứng kiến cha mình bị bọn mafia đối đầu ám sát. Tuy nhiên, cha anh đã may mắn thoát chết trong vụ ám sát này. Sau khi phá vỡ được kế hoạch ám sát lần thứ hai, anh quyết định đi báo thù cho cha mình. Nhưng cũng từ đây. Michael bước vào hành trình đầy máu và hiểm nguy, anh sẽ làm gì? Với tình tiết thắt nút, mở nút cũng như những màn đấu súng nguy hiểm, phim đưa người xem đến với thế giới tội phạm đầy bạo lực, tàn nhẫn với những vỏ bọc giả dối thông qua câu chuyện của một gia đình mafia gốc Italy ở New York. Godfather từng giành 3 giải Oscar và luôn nằm trong số những bộ phim hay nhất của mọi thời đại. ",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name: "PACIFIC RIM",
+        nameVietnamese: "Siêu đại chiến thái bình dương",
+        img: "image/phim61.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"4,432",
+        intro:"Một bộ phim hấp dẫn không thể bỏ qua khi con người phải chiến đấu chống lại những quái vật đến từ kẽ nứt của Thái Bình Dương mang tên gọi Kaiju. Chúng đang đe dọa hủy diệt thế giới loài người khi con người gần như thất bại hoàn toàn trước sức mạnh của lũ quái khổng lồ.",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name: "Spider Man 1",
+        nameVietnamese: "Người nhện - season1",
+        img: "image/phim62.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"9,234",
+        intro:"Spider Man 1 là phần mở đầu cho series phim nổi tiếng Người Nhện. Bộ phim kể về Peter Parker, một cậu học sinh nhút nhát, được nuôi nấng bởi người cô chú giàu tình thương coi cậu như con đẻ. Trong một lần đi thăm khu nghiên cứu loài nhện, Peter bị cắn bởi một chú nhện. Sau khi bị hôn mê, tỉnh dậy anh trở nên vạm vỡ và có những khả năng phi thường. Anh sử dụng khả năng của mình để làm những việc thiện, giúp đỡ kẻ yếu nhưng giữ kín tung tích của mình. Nhưng, có sức mạnh không có nghĩa là may mắn. Peter đã gặp phải một đối thủ hết sức lợi hại là Norman Osborn - một nhà khoa học trong một tai nạn biến thành một kẻ nửa người máy độc ác, có sức mạnh không kém gì anh... Liệu Peter có thể quen với sức mạnh mới của mình? Anh có chiến đấu chống lại được Norman Osborn? ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name: "THE TERMINTOR 5",
+        nameVietnamese: "Kẻ hủy diệt - season5",
+        img: "image/phim63.png",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"9,432",
+        intro:"Phần 5 của Kẻ hủy diệt sẽ tập trung vào sự kiện trước khi Sarah Connor biến mất vào khoảng giữa Terminator 2: Judgment Day và Terminator 3: Rise of the Machines. Trong khoảng thời gian này người xem sẽ tiếp xúc với hình hài thật sự của Kẻ hủy diệt T-800 ở dạng con người, và đồng nghĩa với việc sau này tại sao hình mẫu của nhân vật được Skynet lựa cho các lần đưa về quá khứ sau này.",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name: "AVATAR - 2009",
+        nameVietnamese: "Thế thân",
+        img: "image/phim64.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"12,432",
+        intro:"Avatar là câu chuyện về người anh hùng “bất đắc dĩ” Jake Sully – một cựu sĩ quan thủy quân lục chiến bị liệt nửa thân. Người anh em sinh đôi của anh được chọn để tham gia vào chương trình cấy gien với người ngoài hành tinh Na’vi nhằm tạo ra một giống loài mới có thể hít thở không khí tại hành tinh Pandora. Giống người mới này được gọi là Avatar. Sau khi anh của Jake bị giết, Jake được chọn để thay thế anh mình và đã trở thành một Avatar, Jake có nhiệm vụ đi tìm hiểu và nghiên cứu hành tinh Pandora. Những thông tin mà anh thu thập được rất có giá trị cho chiến dịch xâm chiếm hành tinh xanh thứ hai này của loài người.",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name: "WONDER WOMEN",
+        nameVietnamese: "Nữ siêu chiến binh Amazon",
+        img: "image/phim65.png",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"3,432",
+        intro:"Bộ phim kể về quá khứ của nữ chiến binh huyền thoại Diana Prince trước khi nàng trở thành Wonder Woman gặp gỡ Người Dơi và Siêu Nhân trong Batman v Superman: Dawn Of Justice. Wonder Woman khi đó nàng công chúa Diana của vùng Amazone rời hòn đảo quê nhà để khám phá thế giới và từng bước trở thành một trong những siêu anh hùng vĩ đại nhất thế giới. Dù không có sự xuất hiện của hai trai đẹp Batman Ben Affleck và Superman Henry Cavill nhưng Wonder Woman sẽ có sự tham gia của ngôi sao series Star Trek – Chris Pine. ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name: "THE EXPENDABLES 3",
+        nameVietnamese: "Biệt đội đánh thuê - Season3",
+        img: "image/phim67.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"9,432",
+        intro:"Barney và Christmas cùng nhóm của họ phải mặt đối mặt với cựu thành viên Conrad Stonebanks, người đang tìm cách để tiêu diệt The Expendables. Nhưng Barney sẽ không bao giờ buông vũ khí mà không có một cuộc chiến kinh hoàng. Ông mang đến cho các thành viên The Expendables một kỷ nguyên mới bằng việc tuyển dụng những cá nhân trẻ, nhanh hơn và am hiểu công nghệ hơn",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name: "300",
+        nameVietnamese: "300 chiến binh",
+        img: "image/phim66.jpg",
+        tag: "PHIM HỌC TIẾNG ANH NỔI BẬT",
+        number:"9,432",
+        intro:"300” phần 2 lần này có tựa đề “Rise of an Empire” sẽ có nội dung dựa trên tiểu thuyết bằng tranh “Xerxes” của tác giả Frank Miller, và được kể bằng phong cách điện ảnh ấn tượng đã từng được thể hiện trong “300” phần một. Chương mới của thiên anh hùng ca lần này sẽ diễn ra trên chiến trường biển cả, khi tướng Themistokles tập hợp toàn quân Hy Lạp bước vào một trận hải chiến lịch sử sẽ thay đổi cả cục diện cuộc chiến tranh...Đối thủ lần này vẫn là quân xâm lược Ba Tư đông đảo được dẫn dắt bởi đại đế Xerxes và nữ tướng Artemisia – chỉ huy trưởng của hạm đội Ba Tư hùng mạnh. ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "STARSHIP ROOPERS3",
@@ -69,7 +270,188 @@ const data = [
         img: "image/phim9.jpg",
         tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
         number:"284",
-
+        intro:"Lấy mốc thời gian 20 năm sau bản phim điện ảnh năm 1997, Starship Trooper trở lại với cuộc xâm lăng của loài bọ xuống khu dân cư Liên Bang trên sao Hỏa. Tuy nhiên dường như có kẻ đã biết trước về cuộc xâm lăng này. Kẻ phản bội đó là ai, và anh lính bất đắc dĩ Johnny Rico sẽ chống cự lại thế nào? ",
+        episode:"1",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name: "PRISON BREAK - SEASON 2",
+        nameVietnamese: "Vượt Ngục - Phần 2 ",
+        img: "image/phim76.jpg",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"284",
+        intro:"Phần hai bắt đầu từ tám giờ kể từ lúc trốn thoát, tập trung chủ yếu vào từng tên tù vượt ngục. Các tù nhân tách ra, chạy trốn và ẩn náu trên khắp đất nước trong khi giới chức trách luôn theo sát phía sau, săn đuổi họ vì những mục đích khác nhau. Brad Bellick - quản giáo trại giam - bị sa thải và tham gia cuộc truy lùng vì món tiền thưởng kếch xù. Vài người trong nhóm vượt ngục liên kết lại cùng nhau đi tìm một số tiền lớn được cất giấu cách đó khá lâu bởi một tù nhân khác. Alexander Mahone - Đặc vụ liên bang được giao nhiệm vụ truy tìm và bắt sống tám tên tù vượt ngục, nhưng bị phát hiện đang làm việc cho Hội Đồng Hành (The Company) - Hội Đồng Hành muốn 8 tên tù phải chết. ",
+        episode:"1",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "CONSTANTINE - SEASON 1",
+        nameVietnamese: "Người Đến Từ Địa Ngục - Phần 1",
+        img: "image/phim77.jpg",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"7,654",
+        intro:"Constantine là một bộ phim truyền hình dựa trên bộ phim điện ảnh cùng tên rất thành công. Phim kể về cuộc chiến giữa Thiên thần và Ác Quỷ, và nhân vật Constantine - một thầy trừ tà với mong ước được lên thiên đường sau khi chết - vô tình bị kẹt ở giữa. Constatine thu hút ở việc khai thác những yếu tố giả tưởng, kinh dị, tuy nhiên mạch phim vẫn giữ được sự mạch lạc, logic chứ không vô lý. Đồng thời, các nhà làm phim đã thành công trong việc tạo dựng không khí ma mị, ám ảnh, điều mà nhiều bộ phim kinh dị tâm linh khác chưa làm được. ",
+        episode:"1",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "Ultimate Spider Man (Season 2)",
+        nameVietnamese: "Người nhện (Phần 2) ",
+        img: "image/phim78.jpg",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"8,424",
+        intro:"Đầu thế kỷ 21, cậu bé Peter Parker sống với bác May và bác Ben sau một tai nạn máy bay làm cha mẹ cậu qua đời. Peter là một học sinh trung học sống hơi khép mình, thông minh và say mê nghiên cứu khoa học. Cậu chỉ có hai người bạn thân duy nhất là Mary Jane xinh đẹp và Harry Osborn, con trai của nhà công nghiệp giàu có Norman Osborn. Vô tình bị cắn bởi một con nhện biến đổi gen, Peter phát hiện ra mình có những khả năng siêu phàm của loài nhện. Cái chết bất ngờ của bác Ben do một tên cướp gây ra làm cho Peter nhận ra rằng: Với sức mạnh to lớn phải đi kèm với trách nhiệm to lớn. Cậu đã khoác lên mình bộ trang phục huyền thoại của Spider-Man và bắt đầu con đường hành hiệp...  ",
+        episode:"1",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
+        
+    },
+    {
+        name: "True Blood ( season 7 )",
+        nameVietnamese: "Thuần huyết - phần 7 ",
+        img: "image/phim79.jpg",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"8,975",
+        intro:"Bộ phim xoay quanh câu chuyện của Sookie Stackhouse, một nữ nhân viên phục vụ ở quán bar có khả năng ngoại cảm và anh trai Jason sống cùng với người bà sau khi bố mẹ qua đời và luôn cố gắng giữ bí mật về khả năng đặc biệt của mình. Cô cảm thấy thoải mái khi kết bạn với những tên ma cà rồng bởi cô không thể đọc suy nghĩ của họ như những người khác. Cũng từ đây, mọi chuyện kỳ bí bắt đầu xảy ra...  ",
+        episode:"13",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+        
+    },
+    {
+        name: " SIX (SEASON 1)",
+        nameVietnamese: "",
+        img: "image/phim80.png",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"3,384",
+        intro:"Phim Biệt Đội Số 6 - Six (Season 1) bắt đầu với việc, đội trưởng của Seal Team Six là Richard “RIP” Taggart do Walton Goggins thủ vai, đã đưa ra một quyết định khó hiểu trong một nhiệm vụ tại Afghanistan. Hai năm sau đó, RIP bị nhóm khủng bố Boko Haram là bắt làm con tin, và việc giải cứu anh phụ thuộc vào những anh em cựu binh Đặc nhiệm hải quân, dẫn đầu là Joe Graves do Barry Sloane thử vai, cùng với Alex Caulder (Kyle Schmid), và Ricky “Buddha” Ortiz (Juan Pable Raba). Nhưng họ lại có những phán đoán khác nhau về cách xác định vị và các cách giải cứu khác nhau...  ",
+        episode:"14",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: " The New Batman Adventures ( season 2 )",
+        nameVietnamese: "Người dơi - phần 2",
+        img: "image/phim81.png",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"284",
+        intro:"Lấy mốc thời gian 20 năm sau bản phim điện ảnh năm 1997, Starship Trooper trở lại với cuộc xâm lăng của loài bọ xuống khu dân cư Liên Bang trên sao Hỏa. Tuy nhiên dường như có kẻ đã biết trước về cuộc xâm lăng này. Kẻ phản bội đó là ai, và anh lính bất đắc dĩ Johnny Rico sẽ chống cự lại thế nào? ",
+        episode:"10",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name: "Black mirror ( season 3 )",
+        nameVietnamese: "",
+        img: "image/phim82.png",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"284",
+        intro:"Phần 3 trong tuyển tập phim về mặt tối của cuộc sống thời công nghệ. ",
+        episode:"12",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "Mr. Bean",
+        nameVietnamese: "Mr. Bean ",
+        img: "image/phim83.png",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"4,284",
+        intro:"Mr.Bean là nhân vật chính của bộ phim, một người ngốc nghếch, đôi khi cũng rất khéo léo, ích kỷ nhưng cũng rất đáng mến với những kế hoạch khác thường trong các công việc thường ngày. Anh ấy sống một mình trong một căn hộ nhỏ ở Highbury, phía bắc Luân Đôn. Luôn xuất hiện cũng với chiếc áo vét làm bằng vải tweed và cà vạt đỏ. Mr. bean rất ít khi nói, và hầu như chỉ là những âm thanh được tạo ra từ miệng.  ",
+        episode:"1",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
+    },
+    {
+        name: "Seinfeld ( season 2 )",
+        nameVietnamese: "Seinfeld - phần 2",
+        img: "image/phim84.png",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"284",
+        intro:"Lấy mốc thời gian 20 năm sau bản phim điện ảnh năm 1997, Starship Trooper trở lại với cuộc xâm lăng của loài bọ xuống khu dân cư Liên Bang trên sao Hỏa. Tuy nhiên dường như có kẻ đã biết trước về cuộc xâm lăng này. Kẻ phản bội đó là ai, và anh lính bất đắc dĩ Johnny Rico sẽ chống cự lại thế nào? ",
+        episode:"1",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "Resurrection ( season 2 )",
+        nameVietnamese: "Hồi sinh - phần 2",
+        img: "image/phim85.png",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"284",
+        intro:"Một cậu bé 8 tuổi có tên Jacob được tìm thấy tại một vùng quê ở Trung Quốc và được một đặc vụ đưa về nhà theo lời chỉ dẫn của cậu. Khi đến nơi, hai cặp vợ chồng trả lời rằng con của họ đã chết từ 32 năm trước... Mọi người đều thắc mắc và cố làm sáng tỏ sự hồi sinh của Jacob, nhưng chỉ duy nhất mình cậu bé mới biết rõ bí mật đó... Phim chỉ dành cho đối tượng trên 16 tuổi. Resurrection nói về cuộc sống của mọi cư dân ở Arcadia, Missouri đã thay đổi hoàn toàn sau khi những người thân đã mất của họ đột nhiên trở về.  ",
+        episode:"8",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "Star-crossed ( season 1 )",
+        nameVietnamese: "Định mệnh - phần 1",
+        img: "image/phim86.png",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"7,284",
+        intro:"Vào năm Emery 6 tuổi, một trận chiến đã xảy ra giữa con người và chủng tộc người ngoài hành tinh Atrian. Trong cuộc chiến ấy, cô bé Emery đã cứu một cậu bé người Atrian có tên là Roman và họ trở thành bạn của nhau. Oái ăm thay, Roman bị bắt và Emery cứ tưởng Roman đã chết. 10 năm trôi qua, họ lại gặp nhau và cuộc sống của cả hai thay đổi hoàn toàn kể từ đây. Phim với sự tham gia của Aimee Teegarden, Malese Jow, Chelsea Gilligan...  ",
+        episode:"6",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "The X-files ( season 10 )",
+        nameVietnamese: "Hồ sơ tuyệt mật - phần 10",
+        img: "image/phim87.png",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"284",
+        intro:"Phim Hồ Sơ Tuyệt Mật 2016, The X-Files 2016 là một miniseries, đây là series giống như một sự tiếp nối của The X-Files 1993 (Nhưng không phải là phần 10). Phim kể về cặp đôi điều tra viên FBI kỳ lạ và không giải thích được. ",
+        episode:"7",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "Mom ( season 4 )",
+        nameVietnamese: "Mẹ - phần 4",
+        img: "image/phim88.jpg",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"7,284",
+        intro:"Là câu chuyện hài hước kể về quá trình tìm lại cuộc sống của Christy - 1 người mẹ độc thân mới tỉnh dậy sau chuỗi ngày dài nghiện ngập rượu của mình, cô đang phải tìm cách quay trở lại cuộc sống của chính mình để giải quyết những vấn đề rắc rối của đứa con gái đang tuổi mới lớn cũng như gây dựng lại mối quan hệ với những người xung quanh trong thung lũng Napa.  ",
+        episode:"12",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "The vampire diaries ( season 4 )",
+        nameVietnamese: "Nhật ký ma cà rồng - phần 4 ",
+        img: "image/phim89.png",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"7,284",
+        intro:"Phim Nhật Ký Ma Cà Rồng 4: đi sâu vào mối quan hệ tay ba ngày càng căng thẳng giữa Elena và hai anh chàng ma cà rồng. Trong khi xem phim này, các bạn sẽ thấy khi Elena phải đối mặt với một cuộc đối đầu sử thi với Katherine. Trong phim hay này, buộc phải thích nghi với cuộc sống ma cà rồng của mình đến khi nào họ tìm ra được cách chữa căn bệnh này, thì Stefan đã phát hiện ra một đầu mối kinh hoàng cho những bí ẩn xung quanh",
+        episode:"1",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "Teen wolf ( season 2 )",
+        nameVietnamese: "Người sói teen - phần 2 ",
+        img: "image/phim90.png",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"34,564",
+        intro:"Phim Người Sói Teen Phần 2: tiếp nối phần 1, Derek đã trở thành một Người sói Alpha, vì thế anh bắt đầu tìm kiếm thành viên mới cho mình. Lúc này, Scott đã không còn được Derek giúp đỡ, điều này khiến Stiles càng trở nên mạnh hơn. Số phận của Lydia và Jackson sẽ được định đoạt trong phần 2 này. Trong lúc đó, Scott vẫn tích cực tìm kiếm cách giải lời nguyền Người sói cho chính mình.  ",
+        episode:"1",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
+    },
+    {
+        name: "STARSHIP ROOPERS3",
+        nameVietnamese: "Chiến binh vũ trụ: Kẻ phản bội sao hỏa",
+        img: "image/phim9.jpg",
+        tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
+        number:"284",
+        intro:"Lấy mốc thời gian 20 năm sau bản phim điện ảnh năm 1997, Starship Trooper trở lại với cuộc xâm lăng của loài bọ xuống khu dân cư Liên Bang trên sao Hỏa. Tuy nhiên dường như có kẻ đã biết trước về cuộc xâm lăng này. Kẻ phản bội đó là ai, và anh lính bất đắc dĩ Johnny Rico sẽ chống cự lại thế nào? ",
+        episode:"1",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "ANNON (2018)",
@@ -77,7 +459,8 @@ const data = [
         img: "image/phim9.jpg",
         tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
         number:"456",
-
+        intro:"Anon: Sal Frieland (Owen) là một thám tử trong một thế giới không có sự riêng tư, dốt nát, hoặc giấu tên; nơi cuộc sống của mọi người trong suốt, có thể theo dõi và được ghi lại bởi chính quyền; nơi tội phạm gần như chấm dứt tồn tại. Nhưng trong cố gắng giải quyết một loạt các vụ giết người chưa được giải quyết, Frieland tình cờ gặp một phụ nữ trẻ được biết đến chỉ là Cô gái (Seyfried). Cô không có danh tính, không có lịch sử và không thể nhìn thấy cảnh sát. Sal nhận ra điều này có thể không phải là kết thúc của tội phạm, mà là sự khởi đầu. ",
+        popular:"Phim nổi bật",
     },
     {
         name: "AVICII: TRUE STORIES(2017)",
@@ -85,7 +468,9 @@ const data = [
         img: "image/phim11.jpg",
         tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
         number:"659",
-
+        intro:"Bộ phim tài liệu kể về cuộc đời và sự nghiệp của DJ nổi tiếng thế giới từ khi anh vụt sáng trong làng giải trí cho tới quyết định giải nghệ đầy bất ngờ đã khắc họa mặt trái của danh tiếng và bạc tiền trong ngành công nghiệp âm nhạc.",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -94,7 +479,9 @@ const data = [
         img: "image/phim12.jpg",
         tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
         number:"284",
-
+        intro:"Trở lại từ khu vườn nơi mà Gnomeo và Juliet sinh sống, những chú lùn lần này sẽ có cuộc hành trình mới đầy hứa hẹn tại thành phố London. Khi Gnomeo và Juliet lần đầu đặt chân đến thành phố này cùng bạn bè và gia đình, họ đã nhận ra rằng khu vườn mới của họ đang bước sang mùa xuân. Tuy nhiên, họ nhanh chóng phát hiện ra đã có một kẻ bắt cóc tất cả những thần lùn giữ cửa ở London. Khi đó Gnomeo và Juliet quay trở về nhà để tìm đến sự giúp đỡ của một người duy nhất có khả năng lần ra manh mối và thủ phạm cho vụ án này đó chính là... SHERLOCK GNOMES. ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -103,7 +490,9 @@ const data = [
         img: "image/phim13.jpg",
         tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
         number:"284",
-
+        intro: "Được MGM làm lại dựa trên bộ phim gốc cùng tên năm 1974, nội dung phim tập trung vào Paul Kersey, một bác sĩ phẫu thuật sống tại Chicago, người đã nhận thấy thành phố nơi ông đang sinh sống luôn bị bao trùm bởi những hành động bạo lực và phi nhân tính mà trong đó vợ và cô con gái của Paul cũng là nạn nhân. Lực lượng cảnh sát không thể khống chế được hết những tên tội phạm trong thành phố, vậy nên đây chính là lúc Paul trả thù và làm người hùng. ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -112,7 +501,9 @@ const data = [
         img: "image/phim14.jpg",
         tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
         number:"284",
-
+        intro:"Bộ phim Escape Plan 2: Hades (Kế Hoạch Đào Tẩu 2: Địa Ngục) xoay quanh nội dung nối tiếp phần đầu: Các chuyên gia thiết lập hệ thống an ninh của Mỹ Ray Breslin bị vướng vào âm mưu của những kẻ muốn giam cầm ông vĩnh viễn trong ngục tù, nhờ có sự trợ giúp của một người bạn trong tù mà ông có thể thoát ra ngoài thành công. Sau đó, ông tiếp tục cuộc sống ở ngoài với nhưng bản hợp đồng lớn trong sự nghiệp của mình, cùng những phi vụ khủng với nhiều thử thách vô cùng lớn hơn bao giờ kết…",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "RED SPARROW(2018)",
@@ -120,7 +511,9 @@ const data = [
         img: "image/phim15.jpg",
         tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
         number:"976",
-
+        intro:"Dominika Egorova (Jennifer Lawrence) bất đắc dĩ được chọn để đào tạo thành một “chim sẻ”, môt điệp viên có sức quyến rũ chết người của Tổng cục an ninh Nga. Dominika phải học cách sử dụng cơ thể như một loại vũ khí, tuy nhiên cô vẫn luôn đấu tranh để duy trì ý thức về bản thân trong suốt quá trình huấn luyện làm vô nhân hóa. Được phát hiện ra tài năng trong một hệ thống tiêu cực, cô nổi lên là một trong những người giỏi nhất của chương trình đào tạo. Mục tiêu đầu tiên của cô là Nate Nash (Joe Edgerton), một nhân viên của CIA, đảm trách nhiệm vụ nằm vùng nhạy cảm nhất của cơ quan tình báo Nga. Hai con người trẻ tuổi rơi vào vòng xoáy luẩn quẩn giữa lôi cuốn và lừa dối, đe dọa đến sự nghiệp của họ, lòng trung thành và an ninh của cả hai quốc gia. Dựa trên quyển tự truyện của cựu nhân viên CIA Jason Matthews, tái hợp Jennifer Lawrence với đạo diễn , Francis Lawrence với Joel Edgerton, Matthias Schoenaerts, Charlotte Rampling, Mary-Louise Parker và Jeremy Irons.",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -129,7 +522,9 @@ const data = [
         img: "image/phim16.jpg",
         tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
         number:"284",
-
+        intro:"Molly's Game kể về câu chuyện có thật xoay quanh tác giả của cuốn sách nêu trên, biệt danh ‘Nữ hoàng Poker’ – Molly Bloom. Molly Bloom từng là một nữ vận động viên Olympic bộ môn trượt tuyết, nhưng ở thời điểm trong phim cô là chủ chuỗi sòng bạc poker ngầm tại Hollywood, nơi chứa chấp mọi loại người từ những ngôi sao điện ảnh, dân chơi chứng khoán cho đến xã hội đen Nga. Những sòng bạc này dần dà đã thu hút sự chú ý của giới truyền thông và cuối cùng đã bị đóng khi Molly Bloom bị FBI bắt. ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -138,7 +533,10 @@ const data = [
         img: "image/phim17.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 1",
         number:"8,564",
-
+        intro:"The Big Bang Theory – Season 1 ( Vụ Nổ Lớn 1) kể về những câu chuyện hài hước, hóm hĩnh của 4 chàng trai tài giỏi nhưng được xếp vào dạng mọt sách (nerd). Họ thường dành thời gian hoàn thiện những dự án cá nhân, chơi điện tử, cùng nhau xem phim khoa học viễn tưởng và đọc truyện tranh. Khả năng kết bạn với phụ nữ của cả bốn được xem như con số 0 tròn trĩnh. Cho đến khi nữ diễn viên xinh đẹp Penny chuyển tới sống tại căn hộ đối diện với Leonard cùng Sheldon thì mọi chuyện dần thay đổi. Leonard có thêm quyết tâm mới trong cuộc đời: đó là biến Penny trở thành bạn gái của mình.",
+        episode:"17",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
     },
 
     {
@@ -147,6 +545,10 @@ const data = [
         img: "image/phim18.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 1",
         number:"10,284",
+        intro:"Trong khi Leonard đang tụ tập tiệc tùng trên tàu, thì Sheldon tìm mọi cách an ủi cô bạn Penny chỉ biết thương nhớ anh chàng Leonard…có vẻ như bộ đôi này không tận dụng được tối đa thời gian ở bên nhau khi Leonard lênh đênh trên biển. Chuyện gì sẽ xảy ra khi Leonard còn bận tiệc tùng và hai cô nàng Amy và Bernadette đang có một chút xao nhãng tình yêu trong chuyến tham dự hội nghị sinh học này?",
+        episode:"22",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
 
     },
     {
@@ -155,16 +557,22 @@ const data = [
         img: "image/phim19.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 1",
         number:"5,643",
+        intro:"Trong khi Leonard đang tụ tập tiệc tùng trên tàu, thì Sheldon tìm mọi cách an ủi cô bạn Penny chỉ biết thương nhớ anh chàng Leonard…có vẻ như bộ đôi này không tận dụng được tối đa thời gian ở bên nhau khi Leonard lênh đênh trên biển. Chuyện gì sẽ xảy ra khi Leonard còn bận tiệc tùng và hai cô nàng Amy và Bernadette đang có một chút xao nhãng tình yêu trong chuyến tham dự hội nghị sinh học này?",
+        episode:"24",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim bộ",
 
     },
 
     {
-        name: "How TO TRAIN YOUR DRAGON",
+        name: "HOW TO TRAIN YOUR DRAGON",
         nameVietnamese: "Bí Kíp Luyện Rồng - Season1",
         img: "image/phim20.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 1",
         number:"3,245",
-
+        intro:"Bộ phim lấy bối cảnh là một thế giới thần thoại của người Viking và loài rồng. Câu chuyện xoay quanh cậu bé Hiccup, sống tại đảo Berk. Khi Hiccup được tham gia vào khóa huấn luyện rồng với những cậu bé cùng trang lứa, cậu coi đây là cơ hội để chứng minh rằng mình đã trưởng thành và là một chiến binh thật sự. Cậu đã giải thoát và kết bạn với một chú rồng và đặt chú tên Toothless. Mối quan hệ này đã thay đổi hoàn toàn cuộc sống của cậu khi cậu đấu tranh để thuyết phục cả bộ tộc mình rằng việc giết rồng là không cần thiết…",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -173,7 +581,9 @@ const data = [
         img: "image/phim21.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 1",
         number:"2,345",
-
+        intro:"Tom Và Jerrys sẽ đình chiến tạm thời để phiêu lưu cùng người bạn Jack trên một cây đậu thần khổng lồ. Cây đậu sẽ đưa họ đến một vùng đất mới được cai trị bới một gã khổng lồ tham lam. Ở đây họ sẽ được gặp một tập hợp những nhân vật quen thuộc như chú chó Droopy, nàng tiên có cánh và một con ngỗng biết đẻ trứng vàng...",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -182,7 +592,9 @@ const data = [
         img: "image/phim22.png",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 1",
         number:"7,456",
-
+        intro:"Ở một ngôi làng giữa biển khơi - có một cô bé đầy dũng mãnh, gan dạ, khao khát tự do và luôn tìm đến miền biển khơi, nhưng lại bị người làng ngăn cản - chính là Moana. Thế nhưng rồi, bóng tối hiện về, hòn đảo chết dần, cô được biển khơi trao tặng sứ mệnh vượt đại dương, trả lại trái tim cho Te Fiti, để cứu lấy nhân loại. Xuyên suốt đồng hành trên chuyến đi là Á Thần Maui - kẻ đã gây ra sai lầm trong quá khứ và chú gà HeiHei ngốc nghếch. Hành trình đầy giông bão và khó khăn, Moana và Maui sẽ vượt qua như thế nào ?!",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -191,7 +603,9 @@ const data = [
         img: "image/phim23.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 1",
         number:"7,456",
-
+        intro:"Xem phim how i met your mother là câu chuyện được nhân vật chính - Ted Mosby kể lại cho 2 đứa con của mình về câu chuyện tình của bố mẹ chúng. Khi anh chàng 27 tuổi, Ted cảm thấy muốn kết hôn sau khi cậu bạn cùng phòng, Marshall đính hôn với cô bạn thân từ thời đại học của anh, Lily sau 9 năm hẹn hò. Với sự giúp đỡ của 'chuyên gia tán gái' Barney, Ted đã bước vào cuộc tìm kiếm “một nửa” của mình. Bộ phim vô cùng hài hước và là nguồn tài liệu để học nói tiếng anh cực kì hiệu quả. ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
     },
 
     {
@@ -200,7 +614,9 @@ const data = [
         img: "image/phim24.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 1",
         number:"1,724",
-
+        intro:"Một nữ sinh trung học sống 2 đời sống : một là Miley Stewart, nữ sinh trung học bình thường, mặt kia là Hannah Montana, ca sĩ nhạc Rock được khán giả rất yêu thích. Tuy nhiên sự nổi tiếng của Hannah khiến cuộc sống của Miley trở nên quá tải. Cha cô khuyên cô nên về quê tại vùng Crowley Corners, Tennessee để tìm thấy hạnh phúc đích thực trong cuộc sống. Nhưng liệu xa rời sân khâu hào nhoáng, Miley có tìm được hạnh phúc như cha cô nghĩ?",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim bộ",
     },
 
     {
@@ -209,7 +625,9 @@ const data = [
         img: "image/phim25.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 2",
         number:"3,334",
-
+        intro:"Cô bé Anna lạc quan và can đảm cùng với Kristoff tham gia một cuộc hành trình trong điều kiện thời tiết lạnh lẽo như Everest, đồng hành với một người tuyết vui nhộn tên là Olaf trong một cuộc chạy đua đi tìm người chị Elsa của Anna, người có năng lực đóng băng đã làm cả vương quốc mắc kẹt trong mùa đông vĩnh cửu",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -218,7 +636,9 @@ const data = [
         img: "image/phim26.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 2",
         number:"3,334",
-
+        intro:"Hotel Transylvania 2 (Khách sạn huyền bí 2) là câu chuyện tiếp theo của phần 1, sau khi tiếp nhận con rể đến từ thế giới loài người, bá tước Dracula đã nới lỏng chính sách của khách sạn “quái vật” và mở cửa đón tiếp cả con người. Không còn phải lo lắng cho con gái, Dracula lại phải phiền não khi đứa cháu trai lai của mình mãi vẫn chưa có những dấu hiệu mà ma cà rồng cần có. Thế nên, trong khi Mavis đang mải đi thăm gia đình nhà chồng và khám phá thế giới loài người, bá tước Dracula cùng với những người bạn Frank, Murray, Wayne và Griffin liền đưa nhóc tì Dennis vào khuôn khổ với khóa đào tạo ma cà rồng có-1-0-2. Khóa tập huấn vẫn chưa đi đến đâu thì khách sạn huyền bí lại gặp thêm nhiều sóng gió, khi ma cà rồng già, cục cằn Vlad - bố của Dracula ghé thăm. Câu chuyện sẽ ra sao khi Vlad phát hiện ra chắt của mình không phải ma cà rồng thuần chủng, còn khách sạn huyền bí bây giờ mở cửa cho cả con người?",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -227,7 +647,9 @@ const data = [
         img: "image/phim27.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 2",
         number:"3,334",
-
+        intro:"Blu là chú chim Macaw thuần hóa và chưa bao giờ tập bay, sống một cuộc sống thoải mái với người bạn thân Linda cùng cậu chủ. Blu và Linda đều tưởng Blu là cá thể duy nhất còn sót lại của loài Macaw, nhưng rồi họ phát hiện ra còn một “cô” Macaw cái tại Rio de Janeiro, cả hai quyết định thực hiện của hành trình mạo hiểm để tìm Jewel, cô Macaw của Blu. Không may khi tới Rio, Blu và Jewel bị bắt cóc bởi một nhóm buôn lậu thú, với sự khôn ngoan của Jewel và sự giúp sức của các chú chim thành phố. Blu đã trốn thoát, cùng sự trợ giúp của những người bạn mới, chú chim Macaw sẽ tìm cách học bay, giải cứu người bạn Linda và dạy cho bọn buôn lậu một bài học. ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -236,7 +658,9 @@ const data = [
         img: "image/phim28.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 2",
         number:"3,567",
-
+        intro:"Sự trỗi dậy của các Vệ thần là một bộ phim hoạt hình giả tưởng/phiêu lưu 3D dựa trên loạt sách The Guardians of Childhood của William Joyce và phim ngắn The Man in the Moon của Joyce và Reel FX",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -245,7 +669,9 @@ const data = [
         img: "image/phim29.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 2",
         number:"3,567",
-
+        intro:"ellas Barden là một trường đại học tất cả các cô gái-một nhóm hát cappella phát triển mạnh trên các bài hát pop nữ và vẻ ngoài hoàn hảo của họ. Sau một thảm họa thất bại tại trận chung kết năm ngoái, họ bị buộc phải tập hợp lại.Trong số các thành viên mới là sinh viên năm thứ nhất Beca, DJ, độc lập, tham vọng với không quan tâm đến đời sống đại học. Nhưng sau khi cô gặp Jesse, từ nhóm đối thủ của tất cả các nam cappella, Beca có một cái nhìn mới và đưa nó khi mình để giúp cho Bellas tìm thấy cái nhìn mới và âm thanh của họ và nhận được trở lại các đối thủ cạnh tranh..…",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -254,7 +680,9 @@ const data = [
         img: "image/phim30.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 2",
         number:"1,567",
-
+        intro:"Cậu bé Tim 7 tuổi vốn dĩ đang có một cuộc sống rất ấm êm và đầy màu hồng thì bỗng dưng phải đối mặt với “biến cố” lớn trong đời: có một đứa em trai và phải học cách làm anh. Mọi khi cậu luôn là tâm điểm trong mắt bố mẹ, nhưng giờ đây Tim phải chấp nhận san sẻ tình yêu thương. Chưa hết, đứa em trai quái chiêu của cậu còn “thống trị” toàn bộ căn nhà, bắt nạt Tim và luôn khóc thét trước mặt bố mẹ để dành quyền được dỗ dành. Thế nhưng, em bé không còn “bé” như họ tưởng, “Nhóc trùm” nói giọng người lớn và cư xử như một dân anh chị, nhân vật bí ẩn bên trong lốt em bé này đến từ đâu và với mục đích gì? ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -263,7 +691,9 @@ const data = [
         img: "image/phim31.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 2",
         number:"3,567",
-
+        intro:"Là một loạt phim tài liệu gồm 6 phần do BBC sản xuất, do Kenneth Branagh thuyết minh, và được phát sóng lần đầu tiên ở vương quốc Anh năm 1999. Loạt phim sau đó được phát sóng ở Bắc Mỹ trên Discovery Channel năm 2000, thuyết minh được thay bằng Avery Brooks. Đây là entry đầu tiên của loạt Walking with... và sử dụng hình ảnh tạo ra từ máy tính và animatronics để tái hiện lại sự sống trong Mesozoic, như các loài khủng long và các họ hàng trong hiện đại của chúng theo cách mà trước đây chỉ được thấy trong các bộ phim giả tưởng. Loạt phim được các nhà cổ sinh vật học tư vấn như Michael Benton, Thomas R. Holtz, Jr., Peter Dodson, Peter Larson và James Farlow. ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim bộ",
     },
     {
         name: "TRANSFORMER",
@@ -271,7 +701,9 @@ const data = [
         img: "image/phim32.png",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 2",
         number:"5,134",
-
+        intro:"Chiến Binh Cuối Cùng phá nát những huyền thoại cốt lõi của loạt phim Transformers, và tái định nghĩa thế nào là anh hùng. Con người và các Transformer đang có chiến tranh, Optimus Prime đã biến mất. Chìa khóa để cứu tương lai của chúng ta đang được chôn vùi trong những bí mật của quá khứ, trong lịch sử ẩn còn được giữ kín của các Transformer trên Trái Đất. Trách nhiệm cứu thế giới đè lên vai của một đồng minh đặc biệt: Cade Yeager, người máy Bumblebee, một quý tộc Anh, và một Giáo sư đại học Oxford Trong đời ai cũng có khoảnh khắc chúng ta được chọn để tạo nên sự khác biệt. Trong Transformer: Chiến Binh Cuối Cùng, kẻ ác trở thành anh hùng. Anh hùng sẽ trở thành kẻ thủ ác. Chỉ một thế giới được tồn tại: của họ, hoặc của chúng ta ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -280,7 +712,9 @@ const data = [
         img: "image/phim33.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 3",
         number:"1,987",
-
+        intro:"Harry Potter, cậu bé mồ côi cả cha lẫn mẹ, sống khổ cực dưới gầm cầu thang nhà dì dượng. Cậu không biết mình đã thoát chết thần kỳ ngay khi mới lọt lòng, Harry không hề biết mình mang trong mình dòng máu phù thủy. Cuộc sống của Harry thay đổi đột ngột khi Hagrid, bảo vệ trường Pháp thuật Hogwarst tới đón cậu... Một thế giới mới mở ra với Harry, có cả những điều kỳ thú lẫn nguy hiểm, kẻ tốt lẫn người xấu... Phim được chuyển thể từ tiểu thuyết cùng tên của nữ văn sĩ Rowling đã thu hút sự chú ý của cả thế giới thời điểm ra đời. câu chuyện ngộ nghĩnh về cạu bé phù thủy với cây đũa thần cùng những trò nghịch ngợm đã khiến hàng triệu người mê mẩn. ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -289,7 +723,9 @@ const data = [
         img: "image/phim34.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 3",
         number:"8,987",
-
+        intro:"Xem phim how i met your mother là câu chuyện được nhân vật chính - Ted Mosby kể lại cho 2 đứa con của mình về câu chuyện tình của bố mẹ chúng. Khi anh chàng 27 tuổi, Ted cảm thấy muốn kết hôn sau khi cậu bạn cùng phòng, Marshall đính hôn với cô bạn thân từ thời đại học của anh, Lily sau 9 năm hẹn hò. Với sự giúp đỡ của 'chuyên gia tán gái' Barney, Ted đã bước vào cuộc tìm kiếm “một nửa” của mình. Bộ phim vô cùng hài hước và là nguồn tài liệu để học nói tiếng anh cực kì hiệu quả. ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -298,7 +734,9 @@ const data = [
         img: "image/phim35.png",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 3",
         number:"12,987",
-
+        intro:"Dom và Letty hiện đang đi hưởng tuần trăng mật. Brian cùng Mia đã quyết định từ giã sự nghiệp. Các thành viên còn lại của nhóm cũng đã được minh oan và dần trở về với cuộc sống bình thường. Nhưng một người phụ nữ bí ẩn (do nữ diễn viên đoạt giải Oscar Charlize Theron thủ vai) đã dẫn dụ Dom vào thế giới tội phạm mà anh dường như không thể thoát ra được và thậm chí phản bội lại cả những người thân thiết nhất, họ sẽ phải trải qua những thử thách cam go mà họ chưa từng đối mặt. Từ bờ biển Cuba tới những con phố của New York cho đến đồng bằng băng giá của vùng cực biển Barents, đội ngũ ưu tú này sẽ tung hoành ngang dọc khắp địa cầu để ngăn chận âm mưu làm thế giới hỗn loạn của một kẻ vô chính phủ và mang người đàn ông đã gắn kết họ thành một gia đình trở về. ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -307,16 +745,20 @@ const data = [
         img: "image/phim36.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 3",
         number:"4,987",
-
+        intro:"Bộ phim xoay quanh nhân vật chính công chúa Merida. Từ nhỏ cô đã tỏ ra là người ngang bướng không thích những nề nếp chốn cung. Một ngày, hoàng hậu tổ chức kén phò mã cho Merida. Không chấp nhận sự sắp đặt Merida đã bỏ vương quốc ra đi. Trên đường đi cuộc gặp gỡ định mệnh với mụ phù thủy già đã đưa cô vào những cuộc phiêu lưu đầy hiểm nguy. Brave được đánh giá cao ở khía cạnh nhân văn, đề cao tình cảm gia đình, lòng quả cảm. Thông qua hình ảnh cô công chúa Merida bướng bỉnh người xem liên tưởng tới những cô bé, cậu bé tuổi teen bướng bỉnh mà mình đã gặp đâu đó, với tạo hình nhân vật khá đặc sắc ngộ nghĩnh Brave đã làm thỏa mãn sự háo hức của các Fan nhí. Bên cạnh đó những nhạc khúc Scotlen đã tạo ra điểm nhấn nhất định cho phim. ",
+        popular:"Mới cập nhật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
-        name: "FINDING NEMO",
+        name: "FINDING NEMO ",
         nameVietnamese: "Truy tìm Nemo",
         img: "image/phim37.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 3",
         number:"6,127",
-
+        intro:"Finding Nemo được hãng Pixar Animation Studios sản xuất năm 2003. Tác giả kịch bản kiêm đạo diễn của bộ phim là Andrew Staton. Phim có sự tham gia lồng tiếng của Albert Brooks vai chú cá Marlin và Ellen DeGeneres vai cô cá Dory. Finding Nemo là một bộ phim hoạt hình hài phiêu lưu được làm trên máy tính hay còn gọi là kỹ thuật CGI. Bộ phim kể về hành trình tới cảng Sydney tìm lại con trai Nemo của chú cá hề tên Marlin và cô bạn đồng hành Dory. Vốn dĩ là một ông bố có xu hướng bảo vệ con thái quá, nhưng sau khi Nemo bị mắc kẹt ở rặng san hô Great Barrier và sau đó trôi dạt tới Sydney, trên đường đi tìm lại con trai, Marlin đã học được cách chấp nhận rủi ro và để Nemo tự chăm sóc bản thân cậu. Trong đoạn này, chú rùa kể cho đàn cá chuyện chú cá Marlin đuổi theo Nemo sau khi cậu nhóc bị mắc kẹt trong lưới của những người thợ lặn và sau đó: a) Marlin đã tới gặp ba ông bạn cá mập khác nhờ sự giúp đỡ b) Marlin đã tình cờ gặp phải ba con cá mập hung dữ c) Marlin đã chui vào bụng một con cá mập hung dữ ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -325,7 +767,9 @@ const data = [
         img: "image/phim38.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 3",
         number:"7,754",
-
+        intro:"Finding Dory là bộ phim xoay quanh cô cá xanh nổi tiếng đãng trí Dory. Bối cảnh trong Finding Dory diễn ra 6 tháng sau Finding Nemo. Lúc này, Dory quay trở lại cuộc sống bình thường và yên tĩnh ở rạn san hô. Một ngày, cô cùng với Nemo tham gia vào một buổi dã ngoại để xem những con cá đuối di cư trở về nhà. Thấy vậy, Dory đãng trí bỗng nhớ nhà ghê gớm, và quyết định lên đường tìm xem cha mẹ cũng như quê hương bản quán của mình. Trên đường đi, cô gặp rất nhiều người bạn mới. ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -334,7 +778,9 @@ const data = [
         img: "image/phim39.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 3",
         number:"7,754",
-
+        intro:"ãhai năm kể từ khi Sam Witwicky (Shia LaBeouf) và đội quân Autobot giải cứu loài người khỏi bọn xâm lăng Decepticon. Giờ đây Sam lại đang tất bật chuẩn bị cho mục tiêu lớn nhất trong đời: học đại học xa nhà. Xa nhà cũng là điều mà phe Autobot hiểu rõ hơn hết. Hy vọng tái tạo lại hành tinh quê hương Cybertron đã tan cùng Khối Lập Phương, các Autobot đành ngụ cư tại trái đất, liên minh cùng quân đội NEST rà soát và tiêu diệt những tàn dư còn sót lại của bọn Decepticon ở trái đất. Đáng buồn thay, mong muốn được sống hòa bình bên cạnh con người của các Autobot lại không được chấp nhận. Cố vấn An ninh Quốc gia Theodore Galloway cho rằng sự hiện diện của các Autobot sẽ gây nguy hiểm cho loài người nên tìm cách tống khứ tất cả các Transformer ra khỏi trái đất và giải tán tổ chức NEST. Optimus Prime, thủ lĩnh của phe Autobot, đồng ý rời khỏi hành tinh của chúng ta theo ý muốn của chính phủ, và đồng thời cũng cảnh báo Galloway phải biết tự xử lý những biến cố xảy ra sau khi Autobot không còn ở lại bảo vệ trái đất được nữa. Với sự giúp đỡ của phe Autobot, các chiến sĩ của NEST và cựu điệp viên Simmons, Sam và Mikaela phải tìm ra bí mật lịch sử về sự hiện diện của các Transformers trên trái đất, và bảo vệ hành tinh này khỏi lời nguyền trả thù từ tên Decepticon cổ đại The Fallen. ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -343,7 +789,9 @@ const data = [
         img: "image/phim40.jpg",
         tag: "PHIM HỌC TIẾNG ANH LEVEL 3",
         number:"2,345",
-
+        intro:"him THE JUNGLE BOOK 2016 nói về chuyến phiêu lưu của Mowgli – một cậu bé mồ côi được đàn chó sói nuôi dưỡng trong rừng già Ấn Độ. Ngày qua ngày, Mowgli cảm thấy mình không còn được chào đón ở mái nhà tự nhiên này nữa, bởi một con hổ hung dữ tên Shere Khan tuyên bố sẽ tiêu diệt những sinh vật có khả năng gây nên hiểm họa, sau khi hắn bị loài người tấn công. Buộc phải rời khỏi chốn dung thân duy nhất, Mogwli dấn bước vào một hành trình khám phá, với sự dẫn dắt của báo đen Bagheera và gấu Baloo. Trên đường đi, Mowgli đã gặp những sinh vật xấu xa: một con trăn tên Kaa có ánh mắt thôimiên, con khỉ đột King Louie với khả năng nói tiếng người lưu loát. Chúng cố ép buộc Mowgli hé lộ công thức tạo ra “bông hoa đỏ” lập lòe, được gọi là Lửa. ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
 
     {
@@ -352,7 +800,9 @@ const data = [
         img: "image/phim41.jpg",
         tag: "Phim lẻ xem nhiều",
         number:"2,345",
-
+        intro:"Tạm biệt hai franchise về thời sinh viên, Spider-Man: Homecoming sẽ lần đầu tiên đưa các khán giả đến với cuộc sống trung học của Peter Paker – siêu anh hùng Người Nhện. Liệu một cậu bé chưa trưởng thành sẽ làm thế nào để cân bằng cuộc sống bình thường và trách nhiệm của một anh hùng giải cứu thế giới. Sau những sự kiện ở Captain America: Civil War, Peter Parker trở về cuộc sống thường nhật, tiếp tục làm cậu học sinh trung học nhút nhát trong mắt bạn bè. Song song đó, chàng thiếu niên 15 tuổi vẫn có thể làm người hùng bảo vệ New York nhờ bộ giáp do Tony Stark / Iron Man (Robert Downey Jr.) tặng cho và nằm dưới sự giám sát từ xa của Happy Hogan (Jon Favreau). ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "Jurassic World",
@@ -360,7 +810,9 @@ const data = [
         img: "image/phim42.jpg",
         tag: "Phim lẻ xem nhiều",
         number:"2,345",
-
+        intro:"Cánh cửa Jurassic World mở ra cũng là lúc biết bao ký ức về công viên kỷ Jura ùa về, nhưng quy mô nơi đây đã lớn hơn với nhiều trò chơi hoành tráng hơn, mạo hiểm hơn. Công viên mới này được sở hữu bởi Tập đoàn Masrani, và đội ngũ nhân viên của Jurassic World vẫn đang tiếp tục nghiên cứu một loại gien lai nhằm tạo ra một loài khủng long mới. Những nỗ lực này dường như đem lại kết quả ngược với mong đợi, khi con khủng long có trí thông minh vượt bậc đang được thí nghiệm đã thoát ra và “sẽ giết bất cứ thứ gì di chuyển”. Khán giả đã được chứng kiến những cảnh rượt đuổi đầy kịch tính và phần đồ họa đẹp mắt, hứa hẹn một mùa hè bùng nổ với JURASSIC WORLD: THẾ GIỚI KHỦNG LONG. ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "DEATH POOL",
@@ -368,7 +820,9 @@ const data = [
         img: "image/phim43.jpg",
         tag: "Phim lẻ xem nhiều",
         number:"2,345",
-
+        intro:"Nằm trong top 200 nhân vật truyện tranh vĩ đại nhất mọi thời đại do tạp chí Wizard bình chọn, DEADPOOL được biết đến là một trong những siêu anh hùng, dị nhân nổi tiếng nhất trong thế giới Marvel. Không “phụ kiện” – búa, khiêng hay áo ráp như Thor, Captain American, Iron Man, DEADPOOL đơn thuần là một cựu chiến binh đặc nhiệm, tình nguyện tham gia vào chương trình thử nghiệm vũ khí Weapon X. Sau khi hoàn thành quá trình thử nghiệm, anh đã “khám phá” ra những siêu năng lực đặc biệt mới của bản thân. Bộ phim xoay quanh câu chuyện về Wade Wilson – kẻ ban đầu nằm trong Lực Lượng Đặc Biệt sau đó trở thành một tay lính đánh thuê. Sau khi trải qua một cuộc thử nghiệm tàn khốc, anh có được năng lực tự phục hồi phi thường, từ đó lấy biệt danh Deadpool. Mang trong mình khả năng mới và khiếu hài hước dị thường, Deadpool quyết săn lùng người đàn ông đã hủy hoại cả cuộc đời mình",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "X-men 4: APOCALYPSE",
@@ -376,7 +830,9 @@ const data = [
         img: "image/phim44.png",
         tag: "Phim lẻ xem nhiều",
         number:"2,345",
-
+        intro:"Apocalypse là dị nhân đầu tiên và hùng mạnh nhất của vũ trụ X-Men, đã tích lũy được rất nhiều quyền năng đột biến khác nhau, trở thành kẻ bất tử và bất khả chiến bại. Sau khi tỉnh dậy từ giấc ngủ hàng ngàn năm, hắn cảm thấy thất vọng với thế giới này và năng lực đáng sợ nhất của hắn là khống chế những người khác và biến họ thành kỵ sĩ của mình, nhằm tẩy sạch nhân loại và tạo ra một trật tự thế giới mới và qua đó, hắn sẽ trị vì nó. Số phận của Trái Đất phải đối mặt với tình huống ngàn cân treo sợi tóc, Raven cùng với sự giúp đỡ của Giáo Sư X buộc phải dẫn dắt một đội X-Men trẻ tuổi nhằm chống lại kẻ thù lớn nhất từ trước đến nay và cứu rỗi nhân loại khỏi sự diệt chủng.",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "X-men: ORIGINS",
@@ -384,7 +840,9 @@ const data = [
         img: "image/phim45.jpg",
         tag: "Phim lẻ xem nhiều",
         number:"2,345",
-
+        intro:"Phim là phần trước của ba phần X-Men đã phát hành, kể về nhân vật siêu anh hùng Wolverine của Marvel Comics và 20 năm dữ dội trong quá khứ của anh. Đặc biệt là thời điểm trước khi anh gặp được nhóm các nhà khoa học dẫn đầu là tiến sĩ Cornelius và được cấy ghép chất siêu bền Adamantium vào tế bào xương người để có được một bộ khung xương cứng cáp kỳ lạ. Tuổi thơ của James “Logan” Hewlett trở thành nỗi ám ảnh khi Logan chính tay giết chết cha ruột của mình, sau khi ông giết cha nuôi của anh. Logan và người anh Victor Creed đã cùng chạy trốn khắp nơi khi chỉ là những đứa trẻ, rồi sau đó cùng nhau khoác áo lính lao mình vào những cuộc chiến cho quân đội, và cuối cùng được William Stryker nhận về phục vụ cho đội quân người đột biến đặc biệt của hắn. Sau một trận càn quét ở Châu Phi, Logan giã từ đội quân này và lui về sống ẩn dật cùng bạn gái Silver Fox. Sau 6 năm bình yên, Stryker tìm đến và buộc Logan phải trở về tham gia dự án Weapon X mới của mình. Creed ra tay hạ sát Fox để buộc Logan khuất phục, gây nên mối hận thù giữa hai anh em Logan và Creed. Cùng lúc với việc sở hữu bộ xương từ chất Adamantium, Logan cũng dần mất đi ký ức và bắt đầu một cuộc sống mới. Weapon X đã biến Logan trở thành Wolverine, và người anh Creed cũng mang tên mới là Sabretooth. Tại đây, cuộc chiến thật sự bắt đầu giữa những người đột biến, dưới sự khống chế đầy dã tâm của William Stryker. ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "IRON MAN I",
@@ -392,7 +850,9 @@ const data = [
         img: "image/phim46.png",
         tag: "Phim lẻ xem nhiều",
         number:"2,345",
-
+        intro:"Tony Stark vừa là chủ tập đoàn công nghệ, vừa là một tay chơi kỳ dị. Trong chuyến thị sát Afghanistan, ông bị nhóm khủng bố bắt cóc. Chúng đòi Tony chế tạo thứ vũ khí hủy diệt để tấn công nước Mỹ. Nhận ra sự thật phũ phàng rằng, những vũ khí do mình chế tạo đang quay ngược lại tấn công chính mình, Tony bắt tay chế tạo bộ giáp công nghệ cao. Tẩu thoát khỏi nơi giam cầm, Tony trở thành đại diện công lý dưới biệt danh Người sắt. Trong khi đó, người đồng sự trong tập đoàn Stark âm mưu lật đổ Tony. Bộ phim mở ra câu chuyện trong tương lai về nhóm siêu anh hùng Avenger khi tổ chức bí mật SHIELD bắt đầu lộ diện. ",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "GAME OF THRONES SEASON 1",
@@ -400,7 +860,10 @@ const data = [
         img: "image/phim47.jpg",
         tag: "Phim bộ xem nhiều",
         number:"2,345",
-
+        intro:"Game of Throne kể về bảy gia tộc chiến đấu để làm chủ vùng đất thần thoại Westeros. Những gia tộc thống trị là Houses Stark, Lannister, và Baratheon. Vị vua của Westeros, Robert Baratheon, yêu cầu người bạn cũ của ông là Eddard – lãnh chúa Stark giữ chức vụ cao, Eddard miễn cưỡng chấp nhận mệnh lệnh để tìm ra sự thật đằng sau. Trong lúc ấy, gia tộc của Nữ hoàng, Lannisters, có lẽ đang dự tính mưu đồ để tước đoạt quyền lực. Ở phía bên kia biển khơi, những thành viên cuối cùng của dòng tộc trước đây đã bị truất phế quyền thống trị ,Targaryens, cũng đang sắp đặt kế hoạch giành lại ngai vàng. Còn ở phía cực Bắc, Bóng Trắng – loài quỷ vốn chìm trong giấc ngủ rất dài, nay đã thức giấc,… ",
+        episode:"10",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
     },
     {
         name: "THE BIG BANG OF THEORY - SEASON 11",
@@ -408,7 +871,10 @@ const data = [
         img: "image/phim48.jpg",
         tag: "Phim bộ xem nhiều",
         number:"2,345",
-
+        intro:"Bộ phim xoay quanh cuộc sống của hai anh chàng Leonard và Sheldon sống chung với nhau trong một khu chung cư. Cô hàng xóm mới xuất hiện và Leonard quyết tâm theo đuổi cô ấy. Những người bạn của Leonard và Sheldon cùng với họ, mỗi người một tính cách khác nhau nhưng có đặc điểm khá chung là họ đều nghĩ mình là những nhà khoa học tài giỏi... ",
+        episode:"24",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
     },
     {
         name: "HOW I MET YOUR MOTHER - SEASON 5",
@@ -416,7 +882,10 @@ const data = [
         img: "image/phim49.jpg",
         tag: "Phim bộ xem nhiều",
         number:"2,345",
-
+        intro:"Ted trở thành giảng viên đại học và bắt đầu cuộc phiêu lưu tình ái mới với cô sinh viên Cindy. Sau thời gian nhập nhằng Barney và Robin chia tay nhau, cả hai lao vào những cuộc tình chớp nhoáng nhưng tất cả không thể giúp họ quên được nhau. Sau nhiều trắc trở liệu Lily và Marshall có quyết định có con? Hãy cùng theo dõi How I Met Your Mother để có câu trả lời. ",
+        episode:"24",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
     },
     {
         name: "THE WALKING DEAD - SEASON 8",
@@ -424,6 +893,10 @@ const data = [
         img: "image/phim50.jpg",
         tag: "Phim bộ xem nhiều",
         number:"2,345",
+        intro:"Xác sống phần 8 tiếp tục hành trình của nhóm Rick. Trong phần 8 này của Xác sống, chúng ta sẽ thấy 1 Rick hoàn toàn khác, dứt khoát và tàn nhẫn hơn xưa...",
+        episode:"24",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
 
     },
     {
@@ -432,6 +905,10 @@ const data = [
         img: "image/phim51.jpg",
         tag: "Phim bộ xem nhiều",
         number:"2,345",
+        intro:"Phần hai bắt đầu từ tám giờ kể từ lúc trốn thoát, tập trung chủ yếu vào từng tên tù vượt ngục. Các tù nhân tách ra, chạy trốn và ẩn náu trên khắp đất nước trong khi giới chức trách luôn theo sát phía sau, săn đuổi họ vì những mục đích khác nhau. Brad Bellick - quản giáo trại giam - bị sa thải và tham gia cuộc truy lùng vì món tiền thưởng kếch xù. Vài người trong nhóm vượt ngục liên kết lại cùng nhau đi tìm một số tiền lớn được cất giấu cách đó khá lâu bởi một tù nhân khác. Alexander Mahone - Đặc vụ liên bang được giao nhiệm vụ truy tìm và bắt sống tám tên tù vượt ngục, nhưng bị phát hiện đang làm việc cho Hội Đồng Hành (The Company) - Hội Đồng Hành muốn 8 tên tù phải chết. ",
+        episode:"24",
+        popular:"Phim nổi bật",
+        typeOfVideo:"Phim bộ",
 
     },
     {
@@ -440,6 +917,10 @@ const data = [
         img: "image/phim52.png",
         tag: "Phim bộ xem nhiều",
         number:"2,345",
+        intro:"Năm 1989, sau một trận mưa băng rơi xuống thị trấn Smallville giết chết rất nhiều người, gia đình ông bà Jonathan và Martha Ken đã tìm thấy một chiếc phi thuyền rơi xuống cánh đồng, bên trong đó có một cậu bé xinh xắn. Họ đem đứa bé về nuôi và đặt tên là Clark Kent. ",
+        episode:"20",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim bộ",
 
     },
 
@@ -449,7 +930,9 @@ const data = [
         img: "image/phim53.jpg",
         tag: "Phim lẻ trang search",
         number:"1,345",
-
+        intro:"Rampage (Siêu Thú Cuồng Nộ): kể về nhà sinh vật học Davis Okoye có mối liên kết khăng khít với George - một chú gorilla lưng bạc được anh chăm sóc từ nhỏ. Một thí nghiệm đột biến ngoài ý muốn đã làm biến đổi gorilla thành quái vật khổng lồ hung hăng. Gorilla cùng những sinh vật bị biến đổi khác đã tấn công con người và đẩy nhân loại đứng trước hiểm họa diệt vong.",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "ANT - MAN",
@@ -457,7 +940,9 @@ const data = [
         img: "image/phim54.jpg",
         tag: "Phim lẻ trang search",
         number:"9,432",
-
+        intro:"Ant-Man kể về câu chuyện của một người đàn ông tên là Scott Lang, có khả năng thu nhỏ về kích thước nhưng lại tăng sức mạnh. Điều này buộc Scott Lang phải đón nhận yếu tố trong mình và giúp cố vấn là Tiến sĩ Hank Pym bảo vệ bí mật đằng sau bộ trang phục Ant-Man, thoát khỏi một mối đe dọa khủng khiếp. Đối mặt với những rào cản khổng lồ, Scott Lang và Hank Pym phải lên kế hoạch hoàn thành một vụ cướp để có thể cứu thế giới. ",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "THE LORD OF THE RING",
@@ -465,7 +950,9 @@ const data = [
         img: "image/phim55.jpg",
         tag: "Phim lẻ trang search",
         number:"12,432",
-
+        intro:"Một chiếc nhẫn huyền bí với sức mạnh khủng khiếp cho những ai sở hữu nó: bá chủ và thống trị cả thế giới. Chàng trai trẻ Frodo Baggins thừa hưởng chiếc nhẫn này . Nghe tin đó, tên bạn chúa Sauron muốn có nó bằng được để tăng thêm sức mạnh và thống trị toàn thế giới. Frodo Baggins đành phải hủy bỏ chiếc nhẫn….nhưng sự việc không đơn giản . Muốn phá hủy nó phải đến ngọn núi Doom mới có thể làm được…Bao cuộc phiêu lưu xảy ra giữa cái thiện và cái ác…và họ có đến được nơi cần đến ? Bạo chúa kia có chiếm được chiếc nhẫn . The Lord Of The Ring đã trở thành siêu phẩm rất thành công cả về mặt doanh thu lẫn về mặt nghệ thuật. Minh chứng là The Lord Of The Ring đã nhận được 4 giải Oscar và đạt doanh thu gần 900 triệu USD kể từ khi phát hành. The Lord Of The Ring cũng được lựa chọn vào top 100 phim Mỹ hay nhất mọi thời đại.",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "IRON - MAN 3",
@@ -473,7 +960,9 @@ const data = [
         img: "image/phim56.jpg",
         tag: "Phim lẻ trang search",
         number:"2,432",
-
+        intro:"Iron Man 3 là phần mới nhất của series phim Iron Man. Trong phần này, Tony Stark phải đối đầu với tên trùm khổng bố Mandarincùng kẻ thù giấu mặt Aldrich Killian. Chúng đang tiến hành một thí nghiệm không tưởng nhằm biến đổi con người bình thường thành những chiến binh có sức mạnh vượt trội. Trong cuộc phiêu lưu đầy thử thách đó, anh dần tìm ra đáp án cho câu hỏi vẫn ám ảnh từ bấy lâu nay: liệu con người làm nên bộ giáp sắt hay giáp sắt làm nên con người? Những cảnh quay hoành tráng, những phân cảnh nổ tung trên không hay cảnh các công nghệ, cải tiến mới mà Tony tiếp tục thiết kế cho người sắt sẽ làm nức lòng fan hâm mộ.",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "BATMAN",
@@ -481,7 +970,9 @@ const data = [
         img: "image/phim57.jpg",
         tag: "Phim lẻ trang search",
         number:"4,567",
-
+        intro:"Trong phần này Batman mất tích. Alfred lên đường đi tìm Batman, trong lúc Alfred vắng mặt, Nightwing và Robin tuần tra thành phố Gotham thay cho Alfred. Ngoài ra còn có sự góp mặt của một nhân vật mới, Batwoman, cũng đang điều tra sự biến mất của Batman ",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "THE CAPTAIN OF AMERICAN",
@@ -489,7 +980,9 @@ const data = [
         img: "image/phim58.jpg",
         tag: "Phim lẻ trang search",
         number:"7,267",
-
+        intro:"Black Widow hỏi liệu Steve có kế hoạch thú vị nào cho tối thứ 7 chưa. Thấy Captain America có vẻ hờ hững, cô tiếp tục gợi ý về 1 cô bạn đồng nghiệp sẵn sàng nhận lời hẹn hò nếu Steve Rogers ngỏ lời. Thế nhưng, Steve lại tiếp tục tạt nước lạnh khi tuyên bố đó là lý do khiến anh chẳng bao giờ mở lời với cô gái đó. Trước màn khiêu khích của Black Widow, Steve Rogers khẳng định anh quá bận rộn rồi nhanh chóng nhảy khỏi phi cơ để thực hiện nhiệm vụ...",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "THE AVENGERS 2",
@@ -497,7 +990,9 @@ const data = [
         img: "image/phim59.jpg",
         tag: "Phim lẻ trang search",
         number:"6,785",
-
+        intro:"trong The Avengers Age of Ultron, mệt mỏi vì công việc của một nhà sáng chế, doanh nhân và cả trách nhiệm của một siêu anh hùng, Tony đã quyết định tạo ra Ultron để thay mình bảo vệ thế giới. Nhưng ý tưởng đã thất bại, Ultron trở nên mất kiểm soát và biến thành một cỗ máy sát nhân máu lạnh. Khi hòa bình lại bị đe dọa, đó cũng là lúc biệt đội Avengers phải trở lại và ra tay. Liệu Đế Chế Ultron sẽ thống trị cùng sự hủy diệt hay một lần nữa các Avengers của chúng ta sẽ lại cứu thế giới, và họ sẽ cứu như thế nào? Phải trả những giá gì? ",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "THE GOD FATHER",
@@ -505,7 +1000,9 @@ const data = [
         img: "image/phim60.jpg",
         tag: "Phim lẻ trang search",
         number:"8,643",
-
+        intro:"The Godfather 1 được chuyển thể từ tiểu thuyết cùng tên của nhà văn Mario Puzo. Vito Corleone là ông trùm khét tiếng nhất tại Mỹ lúc bấy giờ. Tuy nhiên, con trai út của ông - Michael sau khi trở về từ Thế chiến II quyết định không tham gia bất cứ phi vụ gì của gia đình. Nhưng trong đám cưới của con gái Vito, một trận chiến khốc liệt nổ ra trong thế giới tội phạm, Michael chứng kiến cha mình bị bọn mafia đối đầu ám sát. Tuy nhiên, cha anh đã may mắn thoát chết trong vụ ám sát này. Sau khi phá vỡ được kế hoạch ám sát lần thứ hai, anh quyết định đi báo thù cho cha mình. Nhưng cũng từ đây. Michael bước vào hành trình đầy máu và hiểm nguy, anh sẽ làm gì? Với tình tiết thắt nút, mở nút cũng như những màn đấu súng nguy hiểm, phim đưa người xem đến với thế giới tội phạm đầy bạo lực, tàn nhẫn với những vỏ bọc giả dối thông qua câu chuyện của một gia đình mafia gốc Italy ở New York. Godfather từng giành 3 giải Oscar và luôn nằm trong số những bộ phim hay nhất của mọi thời đại. ",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "PACIFIC RIM",
@@ -513,7 +1010,9 @@ const data = [
         img: "image/phim61.jpg",
         tag: "Phim lẻ trang search",
         number:"4,432",
-
+        intro:"Một bộ phim hấp dẫn không thể bỏ qua khi con người phải chiến đấu chống lại những quái vật đến từ kẽ nứt của Thái Bình Dương mang tên gọi Kaiju. Chúng đang đe dọa hủy diệt thế giới loài người khi con người gần như thất bại hoàn toàn trước sức mạnh của lũ quái khổng lồ.",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "Spider Man 1",
@@ -521,7 +1020,9 @@ const data = [
         img: "image/phim62.jpg",
         tag: "Phim lẻ trang search",
         number:"9,234",
-
+        intro:"Spider Man 1 là phần mở đầu cho series phim nổi tiếng Người Nhện. Bộ phim kể về Peter Parker, một cậu học sinh nhút nhát, được nuôi nấng bởi người cô chú giàu tình thương coi cậu như con đẻ. Trong một lần đi thăm khu nghiên cứu loài nhện, Peter bị cắn bởi một chú nhện. Sau khi bị hôn mê, tỉnh dậy anh trở nên vạm vỡ và có những khả năng phi thường. Anh sử dụng khả năng của mình để làm những việc thiện, giúp đỡ kẻ yếu nhưng giữ kín tung tích của mình. Nhưng, có sức mạnh không có nghĩa là may mắn. Peter đã gặp phải một đối thủ hết sức lợi hại là Norman Osborn - một nhà khoa học trong một tai nạn biến thành một kẻ nửa người máy độc ác, có sức mạnh không kém gì anh... Liệu Peter có thể quen với sức mạnh mới của mình? Anh có chiến đấu chống lại được Norman Osborn? ",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "THE TERMINTOR 5",
@@ -529,7 +1030,9 @@ const data = [
         img: "image/phim63.png",
         tag: "Phim lẻ trang search",
         number:"9,432",
-
+        intro:"Phần 5 của Kẻ hủy diệt sẽ tập trung vào sự kiện trước khi Sarah Connor biến mất vào khoảng giữa Terminator 2: Judgment Day và Terminator 3: Rise of the Machines. Trong khoảng thời gian này người xem sẽ tiếp xúc với hình hài thật sự của Kẻ hủy diệt T-800 ở dạng con người, và đồng nghĩa với việc sau này tại sao hình mẫu của nhân vật được Skynet lựa cho các lần đưa về quá khứ sau này.",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "AVATAR - 2009",
@@ -537,7 +1040,9 @@ const data = [
         img: "image/phim64.jpg",
         tag: "Phim lẻ trang search",
         number:"12,432",
-
+        intro:"Avatar là câu chuyện về người anh hùng “bất đắc dĩ” Jake Sully – một cựu sĩ quan thủy quân lục chiến bị liệt nửa thân. Người anh em sinh đôi của anh được chọn để tham gia vào chương trình cấy gien với người ngoài hành tinh Na’vi nhằm tạo ra một giống loài mới có thể hít thở không khí tại hành tinh Pandora. Giống người mới này được gọi là Avatar. Sau khi anh của Jake bị giết, Jake được chọn để thay thế anh mình và đã trở thành một Avatar, Jake có nhiệm vụ đi tìm hiểu và nghiên cứu hành tinh Pandora. Những thông tin mà anh thu thập được rất có giá trị cho chiến dịch xâm chiếm hành tinh xanh thứ hai này của loài người.",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "WONDER WOMEN",
@@ -545,15 +1050,19 @@ const data = [
         img: "image/phim65.png",
         tag: "Phim lẻ trang search",
         number:"3,432",
-
+        intro:"Bộ phim kể về quá khứ của nữ chiến binh huyền thoại Diana Prince trước khi nàng trở thành Wonder Woman gặp gỡ Người Dơi và Siêu Nhân trong Batman v Superman: Dawn Of Justice. Wonder Woman khi đó nàng công chúa Diana của vùng Amazone rời hòn đảo quê nhà để khám phá thế giới và từng bước trở thành một trong những siêu anh hùng vĩ đại nhất thế giới. Dù không có sự xuất hiện của hai trai đẹp Batman Ben Affleck và Superman Henry Cavill nhưng Wonder Woman sẽ có sự tham gia của ngôi sao series Star Trek – Chris Pine. ",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
-        name: "THE EXPENDABLES #",
+        name: "THE EXPENDABLES 3",
         nameVietnamese: "Biệt đội đánh thuê - Season3",
         img: "image/phim67.jpg",
         tag: "Phim lẻ trang search",
         number:"9,432",
-
+        intro:"Barney và Christmas cùng nhóm của họ phải mặt đối mặt với cựu thành viên Conrad Stonebanks, người đang tìm cách để tiêu diệt The Expendables. Nhưng Barney sẽ không bao giờ buông vũ khí mà không có một cuộc chiến kinh hoàng. Ông mang đến cho các thành viên The Expendables một kỷ nguyên mới bằng việc tuyển dụng những cá nhân trẻ, nhanh hơn và am hiểu công nghệ hơn",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
     },
     {
         name: "300",
@@ -561,6 +1070,20 @@ const data = [
         img: "image/phim66.jpg",
         tag: "Phim lẻ trang search",
         number:"9,432",
+        intro:"300” phần 2 lần này có tựa đề “Rise of an Empire” sẽ có nội dung dựa trên tiểu thuyết bằng tranh “Xerxes” của tác giả Frank Miller, và được kể bằng phong cách điện ảnh ấn tượng đã từng được thể hiện trong “300” phần một. Chương mới của thiên anh hùng ca lần này sẽ diễn ra trên chiến trường biển cả, khi tướng Themistokles tập hợp toàn quân Hy Lạp bước vào một trận hải chiến lịch sử sẽ thay đổi cả cục diện cuộc chiến tranh...Đối thủ lần này vẫn là quân xâm lược Ba Tư đông đảo được dẫn dắt bởi đại đế Xerxes và nữ tướng Artemisia – chỉ huy trưởng của hạm đội Ba Tư hùng mạnh. ",
+        popular:"Phim xem nhiều",
+        typeOfVideo:"Phim lẻ",
+    }
+
+    
+]
+function updateArray()
+    {
+        data.forEach(e =>
+        {
+            e.srcVideo ="https://player.vimeo.com/external/194837908.sd.mp4?s=c350076905b78c67f74d7ee39fdb4fef01d12420&profile_id=164" 
+            e.src = "watching.html"
+        })
 
     }
-]
+    updateArray();

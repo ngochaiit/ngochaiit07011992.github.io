@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Result</title>
+    </head>
+    <body>
+        <h1>Dang Ki Thanh Cong</h1>
+        <p id="demo"></p>
+        <h1>Click Here to comback Main page<a href="index.html">Trang Chu</a></h1>
+        <script>
+            
+         myFunction();
+        function myFunction() {
+      var x = document.URL;
+       
+       var uri_dec = decodeURIComponent(x);
+       var res = "Decode URI : " + uri_dec;
+       document.getElementById("demo").innerHTML = res;
+       let params = (new URL(document.location)).searchParams;
+       let email = params.get("email").toString();
+       let password = params.get("password").toString();
+       let fullName = params.get('fullname').toString();
+       document.write("<h1>Thank You!!</h1>");
+    document.write("<h3>Here is your data</h3>");
+    document.write("Your full name is:" +fullName+ "<br/>");
+    document.write("Email is: " +email+ "<br/>");
+    document.write("password is: " +password+ "<br/>");
+
+}
+
+
+
+</script>
+    <script src="js/registration.js"></script>
+        </body>
+    
+</html>

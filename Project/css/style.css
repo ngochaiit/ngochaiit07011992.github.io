@@ -18,12 +18,16 @@ span {
     max-width: 100%;
     background-color: #f1f1f1;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .header
 {
     width: 100%;
     height: 100%;
-    background-color: white;    
+    background-color: white;
+    display: flex;
+    flex-direction: column;    
 }
 .header_top
 {
@@ -62,6 +66,11 @@ span {
 nav{
     padding: 0 55px;
     background-color: white;
+}
+.header_middle 
+{
+    width: 100%;
+    height: 60%;
 }
 nav ul
 {
@@ -126,6 +135,67 @@ a i
 {
     margin: 0;
 }
+.account_show
+{
+width: 20%;
+height: 60%;
+display: flex;
+align-items: center;
+display: none;
+position: relative;
+flex-direction: column;
+}
+.total_show
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.show_name
+{
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #777;
+}
+
+.log_out
+{
+    width: 20%;
+    font-size: 20px;
+    color: orange;
+}
+.info-account
+{
+    position: absolute;
+    top: 100%;
+    width: 50%;
+    height: 100%;
+    display: none;
+    z-index: 100;
+}
+.info-account > p{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FF6600;
+    font-family: 'Roboto', sans-serif !important;
+    
+
+}
+
+
+
 div.header_middle.hide
 {
     width: 100%;
@@ -269,6 +339,11 @@ article.main-page
     background: white;
     width: 75%;
     margin-right: 10px;
+}
+.list__title
+{
+    display: flex;
+    justify-content: space-between;
 }
 .film-content .list__title h1
 {
@@ -575,11 +650,17 @@ footer{
     background-color: #DDD;
 
 }
+.caption a{
+    text-decoration: none;
+}
 .movies-name h2
 {
     color: #555;
     font-size: 13px;
 text-transform: uppercase;
+text-decoration: none;
+display: inline;
+pointer-events: none;
 }
 .movies-name p{
     color: gray;
@@ -628,13 +709,19 @@ padding-left: 5px;
     max-width: 100%;
     display: flex;
 }
+.movie-imgSide > a{
+    width: 60%;
+    text-decoration: none;
+}
 .thumbnail-side
 {
     width: 40%;
+    pointer-events: none;
 }
 .side-content
 {
-    width: 60%;
+    width: 100%;
+    
 }
 .thumbnail-side img{
     width: 100%;
@@ -653,7 +740,13 @@ padding-left: 5px;
     text-transform: capitalize;
     font-style: italic;
 }
-
+.hide{
+    display: none;
+}
+.show
+{
+    display: block;
+}
 
 
 

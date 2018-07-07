@@ -9,12 +9,14 @@
         <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.min.css">
         <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
-        
+        <!-- jQuery JS 3.1.0 -->
+
+<script src="js/jquery-3.3.1.min.js"></script>
     </head>
    <body>
        
     <div class = "page desktop">
-            <div class="pop-up login" id="login">
+            <form class="pop-up login" id="login" action="result.html" method="GET">
            
                     <div class="option-choice">
                         <div class="login" style="background: gray"><p>Đăng Nhập</p></div>
@@ -31,22 +33,22 @@
                               </div>
                               
                                     <div class="email account">
-                                            <input type="email" placeholder='&#xf075; Email...' required>
+                                            <input type="email" placeholder='&#xf075; Email...' name="email-signin" required >
                                             <div class="icon-mail"></div>
                                         </div>
                                         <div class="email password">
-                                                <input type="password" placeholder="&#xf02b; password" required>
+                                                <input type="password" placeholder="&#xf02b; password" name ="password-signin"required>
                                                 <div class="icon-mail"></div>
                                             </div>
                              
-                                  <button class="login-popup"><a href="">Đăng Nhập</a></button>
+                                  <button class="login-popup sign-in" type="submit"><a href="">Đăng Nhập</a></button>
                                   <a href="" class="fogortPass">Quên mật khẩu? Nhấn vào đây</a>
               
                    </div>
      
-            </div>
+            </form>
 
-            <div class="pop-up1 login" id="resigter">
+            <form class="pop-up1 login" id="resigter" action="result.html" method="GET">
            
                     <div class="option-choice">
                         <div class="login"><p>Đăng Nhập</p></div>
@@ -55,7 +57,7 @@
                    <div class="total-popupResigter">
                          <div class="facebook">
                                  <div class="icon-facebook"><i class="fab fa-facebook-square"></i></div>
-                                 <div class="text-facebook"><p>Đăng nhập bằng Facebook</p></div>
+                                 <div class="text-facebook"><p class="doanvan" style="font-size: 15px">Đăng nhập bằng Facebook</p></div>
                              </div>
                              <div class="facebook">
                                   <div class="icon-facebook google"><i class="fab fa-google"></i></div>
@@ -63,29 +65,29 @@
                               </div>
                               
                                     <div class="email account">
-                                            <input type="email" placeholder='&#xf075; Email...' required>
+                                            <input type="email" placeholder='&#xf075; Email...'name ="email" required>
                                             <div class="icon-mail"></div>
                                         </div>
                                         <div class="email password">
-                                                <input type="password" placeholder="&#xf02b; password" required>
+                                                <input type="password" placeholder="&#xf02b; password" name="password" required>
                                                 <div class="icon-mail"></div>
                                             </div>
                                         
                                             <div class="email repeat-psw">
-                                                    <input type="password" placeholder="&#xf02b; Please repeat your password..." required>
+                                                    <input type="password" placeholder="&#xf02b; Please repeat your password..." name="repeat-password" required>
                                                     <div class="icon-mail"></div>
                                                 </div>
                                                 <div class="email fullname">
-                                                        <input type="password" placeholder="&#xf02b; Please fill your full name" required>
+                                                        <input type="text" placeholder="&#xf02b; Please fill your full name" name="fullname" required>
                                                         <div class="icon-mail"></div>
                                                     </div>
                              
-                                  <button class="login-popup"><a href="">Đăng Nhập</a></button>
+                                  <button class="login-popup register" type="submit"><a href="">Đăng Nhập</a></button>
                                   <a href="" class="fogortPass">Quên mật khẩu? Nhấn vào đây</a>
               
                    </div>
      
-            </div>
+                </form>
         <header class="header">
             <div class="header_top">
                 <div class="header_top content">
@@ -97,8 +99,8 @@
             <nav >
                 <ul>
                    <div class="option">
-                        <li><a class="active" href=""><i class="fab fa-youtube"></i>Trang chủ</a></li>
-                    <li><a href=""><i class="fas fa-search"></i>tìm kiếm phim</a></li>
+                        <li><a class="active" href="index.html"><i class="fab fa-youtube"></i>Trang chủ</a></li>
+                    <li><a href="search.html"><i class="fas fa-search"></i>tìm kiếm phim</a></li>
                     <li><a href=""><i class="fas fa-cube"></i>Learning Method</a></li></div>
                     <div class="icon"><img src="image/icon.JPG"></div>
                     <div class="btn__login">
@@ -106,9 +108,17 @@
                         <button class="btn2" id="btnSignUp"><p>Đăng Kí</p></button>
     
                     </div>
+                    <div class="account_show">
+                        <div class="total_show"><div class="show_name"></div>
+                        <div class="log_out"><i class="fas fa-sign-out-alt"></i></div></div>
+                        <div class="info-account">
+                            <p>Thông tin cá nhân</p>
+                            <p>LOG OUT</p>
+                        </div>
+                    </div>
                 </ul>
             </nav>
-            <div class="header_middle hide">
+            <div class="header_middle ">
                 <div class="ws_images">
                              <img src="http://www.studyphim.vn/assets/img/slider-bg.jpg" class="bg-image" id="bg"> 
                                 <div class="group-image-content" style="display: flex">
@@ -255,15 +265,9 @@
                             <a>Tháng</a>
                         </div>
                         <div class="list--wrap col-side side2">
-                            <!-- <div class="movie-imgSide">
-                                <div class="thumbnail-side">
-                                    <a href=""><img src=""></a>
-                                </div>
-                                <div class="side-content">
-                                    <h2></h2>
-                                    <p></p>
-                                </div>
-                            </div> -->
+                            
+
+
         
                         </div>
                     </div>
@@ -272,46 +276,45 @@
                 <article class="main-page">
                     <article class="film-content">
                         <div class="content-list">
-                            <div class="list__title"><a href=""><h1>PHIM HỌC TIẾNG ANH NỔI BẬT</h1></a></div>
+                            <div class="list__title"><a><h1>PHIM HỌC TIẾNG ANH NỔI BẬT</h1></a>
+                                <a class="back-view"><h1 data-category="PHIM HỌC TIẾNG ANH NỔI BẬT" data-id="col1">QUAY LẠI</h1></a>
+                                <a class="view"><h1 data-category="PHIM HỌC TIẾNG ANH NỔI BẬT" data-id ="col1">XEM THÊM</h1></a></div>
                             <div class="list--wrap col1 col">
-                                <!-- <div class="row">
-                                <div class="col-md-3">
-                                   <div class="movie-img"> <div class="thumbnail">
-                                        <a href=""><img src=""></a>
-                                    </div>
-                                </div>
-                                    <div class="caption">
-                                        <div class="process"></div>
-                                        <div class="movies-name"></div>
-                                    </div>
-                                </div>
-                            </div>  -->
+                              
                              
                                 </div>
                                 </div>
                         <div class="content-list">
-                                <div class="list__title"><a href=""><h1>PHIM HỌC TIẾNG ANH MỚI NHẤT(3097 BỘ)</h1></a></div>
+                                <div class="list__title"><a><h1>PHIM HỌC TIẾNG ANH MỚI NHẤT(3097 BỘ)</h1></a>
+                                    <a class="back-view"><h1 data-category="PHIM HỌC TIẾNG ANH MỚI NHẤT(3097 BỘ)" data-id="col2">QUAY LẠI</h1></a>
+                                    <a class="view"><h1 data-category ="PHIM HỌC TIẾNG ANH MỚI NHẤT(3097 BỘ)" data-id="col2">XEM THÊM</h1></a></div>
                                 <div class="list--wrap col2 col">
                                     </div>
             
                         </div>
         
                         <div class="content-list">
-                                <div class="list__title"><a href=""><h1>PHIM HỌC TIẾNG ANH LEVEL 1:</h1></a></div>
+                                <div class="list__title"><a><h1>PHIM HỌC TIẾNG ANH LEVEL 1:</h1></a>
+                                    <a class="back-view"><h1 data-category="PHIM HỌC TIẾNG ANH LEVEL 1:" data-id="col4">QUAY LẠI</h1></a>
+                                    <a class="view"><h1>XEM THÊM</h1></a></div>
                                 <div class="list--wrap col3 col">
                                     </div>
             
                          </div>
         
                          <div class="content-list">
-                                <div class="list__title"><a href=""><h1>PHIM HỌC TIẾNG ANH LEVEL 2:</h1></a></div>
+                                <div class="list__title"><a><h1>PHIM HỌC TIẾNG ANH LEVEL 2:</h1></a>
+                                    <a class="back-view"><h1 data-category="PHIM HỌC TIẾNG ANH LEVEL 2:" data-id="col2">QUAY LẠI</h1></a>
+                                    <a class="view"><h1>XEM THÊM</h1></a></div>
                                 <div class="list--wrap col4 col">
                                     </div>
             
                          </div>
                         
                          <div class="content-list">
-                                <div class="list__title"><a href=""><h1>PHIM HỌC TIẾNG ANH LEVEL 3:</h1></a></div>
+                                <div class="list__title" ><a><h1>PHIM HỌC TIẾNG ANH LEVEL 3:</h1></a>
+                                    <a class="back-view"><h1 data-category="PHIM HỌC TIẾNG ANH LEVEL 3:" data-id="col2">QUAY LẠI</h1></a>
+                                    <a class="view"><h1>XEM THÊM</h1></a></div>
                                 <div class="list--wrap col5 col">
                                     </div>
             
@@ -373,6 +376,8 @@
     </div>
     <script src="js/data.js"></script>
     <script src="js/logic.js"></script>
+    <script src="js/registration.js"></script>
+    <script src ="js/login.js"></script>
    
    </body>
 
