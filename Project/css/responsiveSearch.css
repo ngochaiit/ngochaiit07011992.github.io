@@ -1,0 +1,42 @@
+@media only screen and (max-width: 736px)
+{
+    nav ul{
+        height: 80px;
+        padding-bottom: 10px;
+    }
+    .selection{
+        width: 100%;
+    }
+    .col-search
+    {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 300px 300px;
+        grid-column-gap: 5%;
+    }
+}
+@media only screen and (max-width : 500px)
+{
+  nav {
+      padding: 0 !important;
+  }
+  .search-bar{
+      height: 80px;
+  }
+  .search-bar form{
+      height: 40px;
+  }
+  .content-film
+  {
+      padding: 0;
+
+  }
+  .col-search
+  {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  300px;
+    grid-row-gap: 10px;
+  }
+  
+}

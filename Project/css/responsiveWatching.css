@@ -1,0 +1,12 @@
+@media only screen and (max-width : 736px)
+{
+    aside
+    {
+        width: 0%;
+        display: none;
+    }
+    .content-movie-watching
+    {
+        width: 100%;
+    }
+}

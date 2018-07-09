@@ -16,9 +16,9 @@ let colSide1 = document.querySelector('.side1');
 let colSide2 = document.querySelector('.side2');
 let viewMore = document.querySelectorAll('.view');
 let comback  = document.querySelectorAll('.back-view');
-
-
-
+let resigerPopUp = document.getElementById('resigerbtn');
+let btnLoginPopUp = document.getElementById('btnLoginPopup');
+console.log(btnLoginPopUp);
 let index = 0;
 //change back-ground image for 5s
 setInterval(function()
@@ -334,6 +334,7 @@ sessionStorage.setItem('nameFilm',e.target.dataset.name);
 }
 
 
+
 // function checkSession()
 // {
 //   let checkData = sessionStorage.getItem('testUSer');
@@ -345,8 +346,22 @@ sessionStorage.setItem('nameFilm',e.target.dataset.name);
 //   }
 //   console.log(checkData);
 // }
+function popupChange()
+{
+  loginForm.style.display = "none";
+  ResigterForm.style.display = "block";
+  console.log("idiot");
+}
+ function popupchangetoLoginForm()
+ {
+   loginForm.style.display = "block";
+   ResigterForm.style.display = "none";
+   console.log("idiot123");
+ }
 btnLogin.addEventListener('click',popupLogin);
 btnResigter.addEventListener('click',popupResigter);
+resigerPopUp.addEventListener('click',popupChange);
+btnLoginPopUp.addEventListener('click',popupchangetoLoginForm);
 
 
 

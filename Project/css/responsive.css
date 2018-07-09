@@ -248,7 +248,7 @@ footer
 }
 
 }
-@media only screen and (max-width : 320px)
+@media only screen and (max-width : 500px)
 {
     .ws_images
     {
@@ -264,7 +264,7 @@ footer
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
-     
+        grid-row-gap: 100px;
     }
 }
 
