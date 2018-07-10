@@ -107,11 +107,12 @@ a i
 {
     width: 15%;
     height: 60%;
-    border: 1px solid black;
     display: flex;
     align-items: center;
+    
 
 }
+
 .btn__login button{
     width: 100%;
     height: 100%;
@@ -119,13 +120,32 @@ a i
 }
 .btn__login .btn1
 {
-    background: white;
-    color: black;
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+
+}
+.btn__login .btn1:hover{
+    cursor: pointer;
+    background: black;
 }
 .btn__login .btn2
 {
-    background-color: #2A82B6;
-    color: white;
+    background-color: #1199c3; 
+    border: none;
+    color: #fff;
+   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn__login .btn2:hover{
+    cursor: pointer;
+    
 }
 .btn__login .btn1  p
 {
@@ -253,7 +273,7 @@ div.header_middle.hide
     width: 200px;
     height: 45px;
     background-color: #FF6600;
-    border: 1px solid black;
+    border: 1px solid #FF6600;
     -webkit-border-radius:10px ;
     -moz-border-radius:10px ;
     -ms-border-radius:10px ;
@@ -266,6 +286,7 @@ div.header_middle.hide
     color: white;
     text-align: center;
     border-radius:10px ;
+    text-decoration: none;
     
 }
 .phone-group-image
@@ -434,6 +455,12 @@ div.side.search
     border-top-right-radius: 10%;
    border-bottom-right-radius: 10%;
    font-size: 12px;
+border: none;
+color: #fff;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+
 
 }
 .sign-youtube
@@ -571,6 +598,7 @@ footer{
     
 
 }
+
 .footer-box1 img{
     padding-top: 21px;
     padding-right: 10px;
@@ -592,7 +620,8 @@ footer{
 }
 .footer-box2 a{
     display: flex;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted gray;
+    text-decoration: none;
     
 }
 .footer-box2 i{
@@ -643,17 +672,39 @@ footer{
 .process
 {
     width: 100%;
-    height:30px;
+    height: 25px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     background-color: #DDD;
+    position: relative;
+    text-align: center;
 
 }
+
+progress::-webkit-progress-value {
+    background: #4CAF50;;
+  }
+  
+  progress::-moz-progress-bar {
+    background:#4CAF50;;
+  }
+  
+  progress::-webkit-progress-value {
+    background:#4CAF50;;
+  }
+  
+  progress::-webkit-progress-bar {
+    background:#4CAF50;;
+  }
 .caption a{
     text-decoration: none;
+}
+.movies-name
+{
+    padding-top: 10px;
 }
 .movies-name h2
 {
@@ -749,9 +800,18 @@ padding-left: 5px;
 {
     display: block;
 }
+.show_name:hover{
+cursor: pointer;
+}
+.info-account
+{
+    cursor: pointer;
+}
 
-
-
+.film-content
+{
+    padding-left: 10px;
+}
 
 
 

@@ -18,6 +18,8 @@ let viewMore = document.querySelectorAll('.view');
 let comback  = document.querySelectorAll('.back-view');
 let resigerPopUp = document.getElementById('resigerbtn');
 let btnLoginPopUp = document.getElementById('btnLoginPopup');
+let logOut = document.querySelector('.info-account p:nth-child(2)');
+console.log(logOut);
 console.log(btnLoginPopUp);
 let index = 0;
 //change back-ground image for 5s
@@ -97,7 +99,7 @@ function popupResigter()
         `
         
        <div class="col-md-3 ${_class}" id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><input class="process" placeholder = "0%"><a href = "watching.html"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100" data-label = "50% complete"></progress><a href = "watching.html"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
        `
       }
       
@@ -113,7 +115,7 @@ function popupResigter()
         col2.innerHTML +=
         `
         <div class="col-md-3 ${_class}" id ="item${i2}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><input class="process" placeholder = "0%"><a href ="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100"></progress><a href ="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
         `
       }
       else if(e.tag == "PHIM HỌC TIẾNG ANH LEVEL 1")
@@ -121,7 +123,7 @@ function popupResigter()
         col3.innerHTML += 
         `
         <div class="col-md-3" ${_class} id ="item${i3}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><input class="process" placeholder = "0%"><a href ="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100"></progress><a href ="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
         `
       }
 
@@ -130,7 +132,7 @@ function popupResigter()
         col4.innerHTML += 
         `
         <div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><input class="process" placeholder = "0%"><a src="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100"></progress><a src="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
         `
       }
 
@@ -139,7 +141,7 @@ function popupResigter()
         col5.innerHTML +=
         `
         <div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><input class="process" placeholder = "0%"><a href ="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100"></progress><a href ="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
         `
       }
       else if(e.tag == "Phim lẻ xem nhiều")
@@ -358,10 +360,15 @@ function popupChange()
    ResigterForm.style.display = "none";
    console.log("idiot123");
  }
+ function reloadPage()
+ {
+   location.reload();
+ }
 btnLogin.addEventListener('click',popupLogin);
 btnResigter.addEventListener('click',popupResigter);
 resigerPopUp.addEventListener('click',popupChange);
 btnLoginPopUp.addEventListener('click',popupchangetoLoginForm);
+logOut.addEventListener('click',reloadPage)
 
 
 

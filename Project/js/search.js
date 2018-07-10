@@ -53,7 +53,7 @@ function searchForPopular()
                 var _class = 'show';
                 colSearch.innerHTML +=
             `<div class="col-md-3"  id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100"value = "10" max = "100"></progress><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
             }
         })
@@ -67,7 +67,7 @@ function searchForPopular()
                 var _class = 'show';
                 colSearch.innerHTML +=
             `<div class="col-md-3"  id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100" ></progress><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
             }
         })
@@ -81,7 +81,7 @@ function searchForPopular()
                 var _class = 'show';
                 colSearch.innerHTML +=
             `<div class="col-md-3"  id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100"></progress><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
             }
         })
@@ -109,7 +109,7 @@ function searchForTag(e)
                 var _class = 'show';
                 colSearch.innerHTML +=
             `<div class="col-md-3" ${_class} id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100"></progress></progress><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
             }
         })
@@ -121,7 +121,7 @@ function searchForTag(e)
             {
                 colSearch.innerHTML +=
             `<div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100"></progress><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
             }
         })
@@ -133,7 +133,7 @@ function searchForTag(e)
             {
                 colSearch.innerHTML +=
             `<div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            <div class="caption"><progress class="process" placeholder = "0%"value = "10" max = "100"></progress><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
             }
         })
@@ -148,7 +148,7 @@ function searchForTag(e)
             var _class = 'show';
             colSearch.innerHTML +=
             `<div class="col-md-3" ${_class} id="item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100"></progress><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
         }
     })
@@ -175,7 +175,7 @@ function searchForList()
                 var _class = 'show';
                 colSearch.innerHTML +=
             `<div class="col-md-3" ${_class} id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100"></progress><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
             }
         })
@@ -193,7 +193,7 @@ function searchForList()
                 var _class = 'show';
                 colSearch.innerHTML +=
             `<div class="col-md-3" ${_class} id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><input class="process" placeholder = "0%"><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100"></progress><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
             }
         })
@@ -238,7 +238,7 @@ function searchContent()
             var _class = 'show';
             colSearch.innerHTML +=
             `<div class="col-md-3 ${_class}" id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><input class="process" placeholder = "0%"><a href = "watching.html"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100"></progress><a href = "watching.html" value = "10" max = "100"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
         }
     })
