@@ -43,7 +43,7 @@ function changeIntro()
      numberStudent.innerHTML = `${e.number} Học Viên`
    }
  })
- 
+ sessionStorage.clear();
 }
 
 

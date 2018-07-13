@@ -812,6 +812,10 @@ cursor: pointer;
 {
     padding-left: 10px;
 }
+.movies-name:hover
+{
+    cursor: pointer;
+}
 
 
 

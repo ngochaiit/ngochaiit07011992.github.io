@@ -131,8 +131,8 @@ function popupResigter()
       {
         col4.innerHTML += 
         `
-        <div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100"></progress><a src="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        <div class="col-md-3" ${_class} id = "item${i4}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100"></progress><a href="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
         `
       }
 
@@ -191,6 +191,7 @@ function popupResigter()
     let getMovies = document.querySelectorAll('.movies-name');
    
      getMovies.forEach(e=> e.addEventListener('click',getNameMovies));
+     getMovies.forEach(e=> e.addEventListener('mouseover',getFullName));
     viewMore.forEach(e => e.addEventListener('click', getCategory));
     comback.forEach(e => e.addEventListener('click', backCategory));
    
@@ -209,6 +210,12 @@ function popupResigter()
         }
       })
       
+  }
+  function getFullName(e)
+  {
+   console.log(e.target);
+    
+    
   }
 
 

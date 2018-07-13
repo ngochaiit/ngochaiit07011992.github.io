@@ -70,6 +70,7 @@ function searchForPopular()
             <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100" ></progress><div class="movies-name" data-name = "${e.name}"><a href = "watching.html"><h2>${e.name}</h2></a><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
             `
             }
+            
         })
     }
     else if(selectedPopular == "Phim xem nhiều")
@@ -270,14 +271,9 @@ getDataSearch();
 function getDataSearch()
 {
   
-        const listSearch = document.querySelector('.content-search');
+        const listSearch = document.querySelectorAll('.content-search');
         console.log(listSearch);
-        listSearch.addEventListener('click',function putDatatoStore(e)
-    {
-        console.log(e.target.dataset.name);
-        sessionStorage.setItem('nameFilm',e.target.dataset.name);
-
-    })
+        listSearch.forEach(e => e.addEventListener('click', getNameMovies));
     
 }
 
