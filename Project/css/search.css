@@ -61,6 +61,10 @@ button[name = search] i{
 grid-template-rows: 300px 300px;
 grid-column-gap: 1%;
 padding-top: 40px;
+grid-row-gap: 20px;
+}
+.col-search > a{
+    text-decoration: none;
 }
 .suggestions
 {

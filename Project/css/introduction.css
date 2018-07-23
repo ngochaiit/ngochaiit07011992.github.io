@@ -1,0 +1,270 @@
+*
+{
+    box-sizing: border-box;
+}
+.content-introduction
+{
+       max-width: 100%;
+    padding: 16px 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.text-danger{
+    width: 100%;
+    color: #FF6600;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 10px;
+
+}
+.intro-context
+{
+    width: 100%;
+}
+.intro-context p{
+    font-size: 14px;
+    color: #333;
+
+}
+.intro-context p span:first-child
+{
+    font-weight: bold;
+    color: #428bca;
+}
+.image-intro
+{
+    width: 100%;
+}
+.image-intro img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.center
+{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.trylearning
+{
+ width: 300px;
+height: 60px;
+background-color: #FF6600;
+border: 1px solid #FF6600;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+-o-border-radius: 10px;
+font-size: 20px;
+color: white;
+}
+table{
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+table thead
+{
+    width: 100%;
+}
+table thead tr{
+    width: 50%;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.col-md-6
+{
+    padding:8px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #d0d0d0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+table tbody tr{
+    width: 50%;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d0d0d0;
+   
+}
+table tbody tr td{
+    width: 50%;
+    padding:  10px;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    border-spacing: 2px;
+  
+}
+
+.text-success
+{
+    color: #3c763d;
+    padding-right: 5px;
+    font-size: 1.33333333em;
+line-height: .75em;
+vertical-align: -15%;   
+}
+.text-wrong
+{
+    color: #FF6600;
+    padding-right: 5px;
+    font-size: 1.33333333em;
+line-height: .75em;
+vertical-align: -15%;  
+}
+.content-speaking
+{
+width: 100%;
+display: flex;
+border-bottom: 1px solid #d0d0d0;
+
+}
+.text-speaking
+{
+    width: 60%;
+}
+.image-speaking
+{
+    width: 40%;
+}
+.icon{
+    display: flex;
+    padding: 8px;
+
+}
+.icon h3 >i{
+    background-color: #FF6600;
+width: 38px;
+height: 38px;
+text-align: center;
+font-size: 20px;
+padding: 9px;
+color: #fff;
+margin-top: 21.433px;
+border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+-ms-border-radius: 10px;
+-o-border-radius: 10px;
+
+}
+.icon h3 > span{
+    color: #FF6600;
+    padding-left: 10px;
+    font-size: 25px;
+}
+.title-speaking
+{
+width: 100%;
+}
+.title-speaking p{
+    padding-left: 30px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.title-speaking p span
+{
+   
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #428bca;
+    
+}
+.title-speaking h4{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-left: 30px;
+    font-weight: 700;
+}
+.list-unstyled
+{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+   
+
+}
+
+.list-2
+{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.image-speaking img{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+.content-listening
+{
+    width:100%;
+    display: flex;
+    padding-top: 30px; 
+    border-bottom: 1px solid #d0d0d0;
+}
+.text-listening
+{
+    width: 60%;
+    order: 2;
+
+}
+.title-listening p{
+    font-size: 14px;
+line-height: 1.42857143;
+font-family: 'Roboto', sans-serif;
+}
+.title-listening h4{
+    font-family: 'Roboto', sans-serif;
+text-transform: uppercase;
+font-size: 18px;
+padding-left: 30px;
+font-weight: 700;
+}
+.list-2{
+    font-size: 16px;
+font-family: 'Roboto', sans-serif;
+color: #555;
+}
+.content-vocabulary
+{
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+
+}
+.text-vocabulary
+{
+    width: 60%;
+}
+.title-vocabulary p{
+    padding-left: 30px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.title-vocabulary h4{
+    ont-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-left: 30px;
+    font-weight: 700;
+}
+
+
+

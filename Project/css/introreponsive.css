@@ -1,0 +1,34 @@
+@media only screen and (max-width : 900px)
+{
+    .content-speaking, .content-listening, .content-vocabulary 
+    {
+        flex-direction: column;
+
+    }
+
+    .text-speaking
+    {
+        width: 100%;
+
+}
+.text-listening
+{
+    width: 100%;
+}
+.text-vocabulary
+{
+    width: 100%;
+}
+.image-speaking{
+    width: 100%;
+}
+
+}
+
+@media only screen and (max-width : 500px)
+{
+    .content-introduction
+    {
+        padding: 16px 0;
+    }
+}

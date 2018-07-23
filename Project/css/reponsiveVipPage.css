@@ -1,0 +1,73 @@
+@media only screen and (max-width : 1366px)
+{
+    .text-left li
+    {
+        font-size: 10px;
+    }
+    .grid-vipChoice
+    {
+        grid-template-rows: 600px;
+    }
+}
+@media only screen and (max-width : 960px)
+{
+    .buttonUpdate button
+    {
+        font-size: 10px;
+    }
+    .banks
+    {
+        grid-template-rows: 65px 65px;
+    }
+}
+@media only screen and (max-width : 650px)
+{
+    nav
+    {
+        padding: 20px 55px;
+    }
+    .content-vip
+    {
+        padding: 0px;
+    }
+    .information-account
+    {
+        flex-direction: column;
+    }
+    .account-showInfo
+    {
+        width: 100%;
+    }
+    .banks
+    {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .box-money
+    {
+        width: 100%;
+        margin: 0;
+       
+    }
+    .grid-vipChoice
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: 500px;
+        padding-left: 0;
+        grid-row-gap: 20px;
+        padding-bottom: 20px;
+    }
+    .benefit
+    {
+        padding: 0;
+    }
+    .row
+    {
+
+        flex-direction: column;
+    }
+    .faq-item
+    {
+        width: 100%;
+    }
+}

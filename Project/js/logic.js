@@ -19,6 +19,8 @@ let comback  = document.querySelectorAll('.back-view');
 let resigerPopUp = document.getElementById('resigerbtn');
 let btnLoginPopUp = document.getElementById('btnLoginPopup');
 let logOut = document.querySelector('.info-account p:nth-child(2)');
+
+console.log
 console.log(logOut);
 console.log(btnLoginPopUp);
 let index = 0;
@@ -98,8 +100,8 @@ function popupResigter()
         col1.innerHTML += 
         `
         
-       <div class="col-md-3 ${_class}" id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100" data-label = "50% complete"></progress><a href = "watching.html"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+       <div class="col-md-3 ${_class}" id = "item${i}"><a href ="watching.html"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}" data-name = "${e.name}"><div class = "titleShowName item${i}"><h1>${e.name}</h1></div></div></div> 
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100" data-label = "50% complete"></progress><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></a></div>
        `
       }
       
@@ -114,34 +116,52 @@ function popupResigter()
 
         col2.innerHTML +=
         `
-        <div class="col-md-3 ${_class}" id ="item${i2}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100"></progress><a href ="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+       <div class="col-md-3 ${_class}" id = "item${i2}"><a href="watching.html"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}" data-name = "${e.name}"><div class = "titleShowName item${i}"><h1>${e.name}</h1></div></div> 
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100" data-label = "50% complete"></progress><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></a></div>
         `
       }
       else if(e.tag == "PHIM HỌC TIẾNG ANH LEVEL 1")
       {
+        i3++;
+        var _class = 'hide';
+        if(i3 <9)
+        {
+          _class ='show';
+        }
         col3.innerHTML += 
         `
-        <div class="col-md-3" ${_class} id ="item${i3}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100"></progress><a href ="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        <div class="col-md-3 ${_class}" id = "item${i3}"><a href ="watching.html"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}" data-name = "${e.name}"><div class = "titleShowName item${i}"><h1>${e.name}</h1></div></div> 
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100" data-label = "50% complete"></progress><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></a></div>
         `
       }
 
       else if(e.tag == "PHIM HỌC TIẾNG ANH LEVEL 2")
       {
+        i4++;
+        var _class = 'hide';
+        if(i4 <9)
+        {
+          _class ='show';
+        }
         col4.innerHTML += 
         `
-        <div class="col-md-3" ${_class} id = "item${i4}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100"></progress><a href="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        <div class="col-md-3 ${_class}" id = "item${i4}"><a href ="watching.html"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}" data-name = "${e.name}"><div class = "titleShowName item${i}"><h1>${e.name}</h1></div></div> 
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100" data-label = "50% complete"></progress><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></a></div>
         `
       }
 
       else if(e.tag == "PHIM HỌC TIẾNG ANH LEVEL 3")
       {
+        i5++;
+        var _class = 'hide';
+        if(i5 <9)
+        {
+          _class ='show';
+        }
         col5.innerHTML +=
         `
-        <div class="col-md-3"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100"></progress><a href ="${e.src}"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+        <div class="col-md-3 ${_class}" id = "item${i5}"><a href ="watching.html"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}" data-name = "${e.name}"><div class = "titleShowName item${i}"><h1>${e.name}</h1></div></div> 
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100" data-label = "50% complete"></progress><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></a></div>
         `
       }
       else if(e.tag == "Phim lẻ xem nhiều")
@@ -189,14 +209,71 @@ function popupResigter()
     homePage();
     cutTitleFilm();
     let getMovies = document.querySelectorAll('.movies-name');
-   
+    let fullMovieClick = document.querySelectorAll('.col a');
+     let moviePosition = document.querySelectorAll('.thumbnail');
+    let TitleBoxFilm = document.querySelectorAll('.titleShowName');
+    TitleBoxFilm.forEach(film =>{
+      film.classList.add('hide');
+    })
+    console.log(moviePosition);
+      moviePosition.forEach(e => e.addEventListener('mousemove', controlBox));
+      moviePosition.forEach(e => e.addEventListener('mouseleave', hiddenBox));
+    fullMovieClick.forEach(e => e.addEventListener('click',getNameMovies));
      getMovies.forEach(e=> e.addEventListener('click',getNameMovies));
-     getMovies.forEach(e=> e.addEventListener('mouseover',getFullName));
     viewMore.forEach(e => e.addEventListener('click', getCategory));
     comback.forEach(e => e.addEventListener('click', backCategory));
-   
+    comback.forEach(e => {
+      e.classList.add('hide');
+    })
     
   }
+  // function controlBox(e)
+  // {
+  //   let boxMoving = e.explicitOriginalTarget.nextSibling;
+  //   console.log(boxMoving);
+  //   console.log(e.offsetX);
+  //   console.log(e.offsetY);
+    
+  //   console.log(e);
+  //   if(((e.offsetX >0) &&(e.offsetX <170)) && ((e.offsetY >0) &&(e.offsetY <100)))
+  //   {
+  //     boxMoving.classList.remove('hide');
+  //     boxMoving.classList.add('show');
+  //     boxMoving.style.top = e.offsetX;
+  //     boxMoving.style.left = e.offsetY;
+  //   }
+  //   else{
+  //     boxMoving.classList.remove('show');
+  //     boxMoving.classList.add('hide');
+  //   }
+
+    
+  // }
+  function controlBox(e)
+  {
+    let boxMoving = e.target.nextElementSibling;
+     console.log(e.target);
+     if(((e.offsetX >0) &&(e.offsetX <170)) && ((e.offsetY >0) &&(e.offsetY <100)))
+    {
+    boxMoving.classList.remove('hide');
+      boxMoving.classList.add('show');
+      boxMoving.style.top = e.offsetX;
+      boxMoving.style.left = e.offsetY;
+   }
+   else{
+    boxMoving.classList.remove('show');
+    boxMoving.classList.add('hide');
+   }
+  }
+  function hiddenBox(e)
+  {
+    console.log(e.target.lastElementChild);
+    let boxMoving = e.target.lastElementChild;
+    boxMoving.classList.remove('show');
+    boxMoving.classList.add('hide');
+  }
+  
+ 
   function cutTitleFilm()
   {
     let titleFilm = document.querySelectorAll('.movies-name  >h2');
@@ -224,6 +301,9 @@ function getCategory(e)
 {
   
 const id = e.target.dataset.id;
+comback.forEach(e => {
+  e.classList.add('show');
+})
 
 const parent = document.querySelector(`.${id}`);
 let index = [...parent.querySelectorAll('.show')][7];
@@ -337,7 +417,7 @@ else{
 function getNameMovies(e)
 {
  
-  console.log(e.target.dataset.name);
+  console.log(e.target);
 sessionStorage.setItem('nameFilm',e.target.dataset.name);
   
 }

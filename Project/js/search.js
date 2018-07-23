@@ -26,7 +26,7 @@ window.onload = () =>
     popularChoice.addEventListener('change',searchForPopular);
     ListOrSeri.addEventListener('change',searchForList);
     searchInput.addEventListener('input',disPlayResult); 
-    let getMovies = document.querySelectorAll('.movies-name');  
+    let getMovies = document.querySelectorAll('.col-search a');  
     console.log(getMovies);
     getMovies.forEach(e=> e.addEventListener('click',getNameMovies)); 
 }
@@ -238,8 +238,8 @@ function searchContent()
             i++;
             var _class = 'show';
             colSearch.innerHTML +=
-            `<div class="col-md-3 ${_class}" id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}"></div></div> 
-            <div class="caption"><progress class="process" placeholder = "0%" value = "10" max = "100"></progress><a href = "watching.html" value = "10" max = "100"><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div></a><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div>
+            ` <a href ="watching.html"><div class="col-md-3 ${_class}" id = "item${i}"><div class="movie-img"> <div class="thumbnail"><img src="${e.img}" data-name = "${e.name}"></div></div> 
+        <div class="caption"><progress class="process" placeholder = "0%" value="10" max="100" data-label = "50% complete"></progress><div class="movies-name" data-name = "${e.name}"><h2>${e.name}</h2><p>${e.nameVietnamese}</p></div><div class="number"><i class="far fa-heart"></i><i class="far fa-user"></i><span>${e.number}</span><span>Học viên</span></div></div></div></a>
             `
         }
     })
@@ -259,7 +259,7 @@ function disPlayResult()
    const newArray = findFilm(this.value, data);
    const html = newArray.map(film =>
 {
-    return `<li><a  class = "list-search" href="watching.html"><div class ="image-search"><img src ="${film.img}"></div><div class = "content-search" data-name = "${film.name}"><h4>${film.name}</h4><h4>${film.nameVietnamese}</h4></div></a></li>`
+    return `<li><a  class = "list-search" href="watching.html"><div class ="image-search" ><img src ="${film.img}" data-name = "${film.name}"></div><div class = "content-search" data-name = "${film.name}"><h4>${film.name}</h4><h4>${film.nameVietnamese}</h4></div></a></li>`
    
     
 }).join('');

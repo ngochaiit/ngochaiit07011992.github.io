@@ -323,7 +323,7 @@ const data = [
     },
     {
         name: " SIX (SEASON 1)",
-        nameVietnamese: "",
+        nameVietnamese: "Six - phan 1",
         img: "image/phim80.png",
         tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
         number:"3,384",
@@ -345,7 +345,7 @@ const data = [
     },
     {
         name: "Black mirror ( season 3 )",
-        nameVietnamese: "",
+        nameVietnamese: "Tấm gương đen - phần 3",
         img: "image/phim82.png",
         tag: "PHIM HỌC TIẾNG ANH MỚI NHẤT",
         number:"284",

@@ -1,0 +1,317 @@
+*{
+   box-sizing: border-box;
+
+}
+.content-vip
+{
+    width: 100%;
+    padding: 16px 55px;
+}
+.information-account
+{
+    display: flex;
+    padding-top: 30px;
+}
+.account-showInfo
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+.banks
+
+{
+    width: 70%;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 150px 150px;
+    grid-column-gap: 5%;
+    grid-row-gap: 10px;
+}
+.title
+{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    background: #242122;
+    color: white !important;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.name-account
+{
+    width: 80%;
+    height: 30%;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    margin: 16px auto 0px auto;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+   
+    
+}
+.value
+{
+    width: 80%;
+    height: 30%;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.account-content
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    background: white;
+    border: 1px solid #bce8f1;
+  
+}
+.image-bank
+{
+    width: 100%;
+}
+.image-bank img
+{
+    width: 100%;
+}
+.account-step1
+{
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.account-step1 h1
+{
+    color: #FF6600;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.box-money
+{
+    width: 60%;
+    margin: auto;
+    background: white;
+}
+
+.input-money
+{
+    padding-left: 20px;
+}
+.inputVND
+{
+    display: flex;
+}
+.form-control
+{
+    height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+}
+.money-value
+{
+    padding: 6px 12px;
+font-size: 14px;
+font-weight: 700;
+line-height: 1;
+color: #555;
+text-align: center;
+background-color: #eee;
+border: 1px solid #ccc;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+.accept
+{
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.accept button
+{
+    width: 50%;
+    color: #fff;
+    background-color: #1199c3;
+    border-color: #5891b0;
+    background-image: linear-gradient(to bottom,#52b6ee 0,#409cd3 100%);
+   background-repeat: repeat-x;
+   border-color: #2a82b6;
+   display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-image: none;
+border: 1px solid transparent;
+}
+
+.grid-vipChoice
+{
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 500px;
+    grid-column-gap: 10%;
+
+
+}
+.total-content
+{
+    width: 80%;
+    padding-top: 30px;
+    margin: auto;
+}
+.box-vip
+{
+    background: white;
+}
+.time{
+    color: #fff;
+text-transform: uppercase;
+background-color: #242122;
+font-size: 18px;
+font-weight: 300;
+padding: 18px 0;
+margin: 0 auto;
+text-align: center;
+}
+.value-money
+{
+    margin: 0 auto;
+padding: 30px 0;
+background: #373737;
+color: #fff;
+font-size: 50px;
+font-weight: 50;
+text-align: center;
+}
+.buttonUpdate
+{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.buttonUpdate button
+{
+    margin: 15px auto;
+background-color: #fe6501;
+color: #fff;
+padding: 8px 60px;
+cursor: pointer;
+border: none;
+font-size: 18px;
+}
+.text-left
+{
+    list-style: none;
+}
+.text-left li
+{
+    padding-bottom: 5px;
+    color: rgb(48,48,48);
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 500;
+
+}
+.text-success
+{
+    color: #3c763d;
+    padding-left: 20px;
+    padding-right: 5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: left;
+}
+.benefit
+{
+    width: 100%;
+    padding: 16px 55px;
+    background: white;
+}
+.normal
+{
+    width: 100%;
+    padding-top: 50px;
+}
+.text-danger
+{
+    color: #FF6600;
+text-decoration: none;
+padding-right: 10px;
+font-size: 20px;
+font-family: 'Roboto', sans-serif;
+text-transform: uppercase;
+}
+.row
+{
+    width: 100%;
+    display: flex;
+}
+.faq-item{
+    width: 50%;
+
+}
+.faq-item h3 i{
+    padding-right: 5px;
+    font-size: 14px;
+}
+.faq-item h3{
+    font-size: 16px;
+text-transform: none !important;
+font-weight: 600;
+color: rgb(48,48,48);
+}
+.faq-item-content p
+{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(48,48,48);
+
+}
+.faq-item-content p >span{
+    font-weight: 700;
+    font-size: 14px;
+line-height: 1.42857143;
+font-family: 'Roboto', sans-serif;
+color:rgb(48,48,48);
+}
+.faq-item-content  ul li >span
+{
+    font-weight: 700;
+    font-size: 14px;
+line-height: 1.42857143;
+font-family: 'Roboto', sans-serif;
+color:rgb(48,48,48);
+}
